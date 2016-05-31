@@ -2,8 +2,12 @@ var express = require('express');
 
 var app = express();
 
+app.set('view engine','pug');
+
+app.use(express.static('public'));
+
 app.get('/', function (request, response) {
-  response.send('Hello World!');
+  response.render('index');
 });
 
 app.listen(3000, function (error) {
