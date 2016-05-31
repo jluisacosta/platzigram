@@ -10,6 +10,14 @@ app.get('/', function (request, response) {
   response.render('index');
 });
 
+app.get('/signup', function (request, response) {
+  response.render('index');
+});
+
+app.get('/signin', function (request, response) {
+  response.render('index');
+});
+
 app.listen(3000, function (error) {
   if(error) {
     return console.log('An error ocurred!'), process.exit(1);
