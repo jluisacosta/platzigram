@@ -1,0 +1,25 @@
+{
+  "name": "platzigram",
+  "version": "0.1.0",
+  "description": "Share your photos studying in Platzi with the community",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jluisacosta/platzigram.git"
+  },
+  "keywords": [
+    "javascript",
+    "fullstack",
+    "application",
+    "example"
+  ],
+  "author": "J Luis Acosta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jluisacosta/platzigram/issues"
+  },
+  "homepage": "https://github.com/jluisacosta/platzigram#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
