@@ -2235,24 +2235,48 @@ var title = require('title');
 
 page('/', function (ctx, next) {
   var main = document.getElementById('main-container');
+  var pictures = [{
+    user: {
+      username: 'jluisacosta',
+      avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+    },
+    url: 'http://materializecss.com/images/office.jpg',
+    likes: 100,
+    liked: false
+  }, {
+    user: {
+      username: 'jluisacosta',
+      avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+    },
+    url: 'http://materializecss.com/images/office.jpg',
+    likes: 20,
+    liked: true
+  }];
+
   title('Platzigram');
-  empty(main).appendChild(template);
+  empty(main).appendChild(template(pictures));
 });
 
 },{"./template":16,"empty-element":3,"page":4,"title":7}],16:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var layout = require('../layout');
-var template = yoyo`<div class="container timeline">
-  <div class="row">
-    <div class="col s12 m10 offset-m1 l6 offset-l3">
-      content 
+var pictureCard = require('../picture-card');
+
+module.exports = function (pictures) {
+  var element = yoyo`<div class="container timeline">
+    <div class="row">
+      <div class="col s12 m10 offset-m1 l6 offset-l3">
+        ${ pictures.map(function (picture) {
+    return pictureCard(picture);
+  }) }
+      </div>
     </div>
-  </div>
-</div>`;
+  </div>`;
 
-module.exports = layout(template);
+  return layout(element);
+};
 
-},{"../layout":19,"yo-yo":8}],17:[function(require,module,exports){
+},{"../layout":19,"../picture-card":20,"yo-yo":8}],17:[function(require,module,exports){
 var page = require('page');
 
 require('./homepage');
@@ -2261,7 +2285,7 @@ require('./signin');
 
 page();
 
-},{"./homepage":15,"./signin":20,"./signup":22,"page":4}],18:[function(require,module,exports){
+},{"./homepage":15,"./signin":21,"./signup":23,"page":4}],18:[function(require,module,exports){
 var yoyo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -2310,6 +2334,28 @@ module.exports = function layout(content) {
 };
 
 },{"yo-yo":8}],20:[function(require,module,exports){
+var yoyo = require('yo-yo');
+
+module.exports = function (picture) {
+  return yoyo`<div class="card">
+    <div class="card-image">
+      <img class="activator" src="${ picture.url }">
+    </div>
+    <div class="card-content">
+      <a href="/user/${ picture.user.username }" class="card-title">
+        <img src="${ picture.user.avatar }" class="avatar"/>
+        <span class="username">${ picture.user.username }</span>
+      </a>
+      <small class="right time">Hace 1 día</small>
+      <p>
+        <a class="left" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+        <span class="left likes">${ picture.likes } Me Gusta</span>
+      </p>
+    </div>
+  </div>`;
+};
+
+},{"yo-yo":8}],21:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -2321,7 +2367,7 @@ page('/signin', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":21,"empty-element":3,"page":4,"title":7}],21:[function(require,module,exports){
+},{"./template":22,"empty-element":3,"page":4,"title":7}],22:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 
@@ -2352,7 +2398,7 @@ var signinForm = yoyo`<div class="col s12 m7">
 
 module.exports = landing(signinForm);
 
-},{"../landing":18,"yo-yo":8}],22:[function(require,module,exports){
+},{"../landing":18,"yo-yo":8}],23:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -2364,7 +2410,7 @@ page('/signup', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":23,"empty-element":3,"page":4,"title":7}],23:[function(require,module,exports){
+},{"./template":24,"empty-element":3,"page":4,"title":7}],24:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 
