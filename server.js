@@ -1,5 +1,4 @@
 var express = require('express');
-
 var app = express();
 
 app.set('view engine','pug');
@@ -23,5 +22,5 @@ app.listen(3000, function (error) {
     return console.log('An error ocurred!'), process.exit(1);
   }
 
-  console.log('Platzigram escuchando en el puerto 3000');
+  console.log('Platzigram listening on port : 3000');
 });
