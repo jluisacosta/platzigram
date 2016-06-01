@@ -6,15 +6,15 @@ app.set('view engine','pug');
 app.use(express.static('public'));
 
 app.get('/', function (request, response) {
-  response.render('index');
+  response.render('index', { title: 'Platzigram' });
 });
 
 app.get('/signup', function (request, response) {
-  response.render('index');
+  response.render('index', { title: 'Platzigram - Signup' });
 });
 
 app.get('/signin', function (request, response) {
-  response.render('index');
+  response.render('index', { title: 'Platzigram - Signin' });
 });
 
 app.listen(3000, function (error) {
