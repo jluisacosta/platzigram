@@ -1,11 +1,17 @@
 var yoyo = require('yo-yo');
 var moment = require('moment');
-var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
+var IntlRelativeFormat, rf;
 
+if(!window.Intl) {
+  window.Intl = require('intl');
+  require('intl/locale-data/jsonp/en.js');
+  require('intl/locale-data/jsonp/es.js');
+}
+
+IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
 require('intl-relativeformat/dist/locale-data/en.js');
 require('intl-relativeformat/dist/locale-data/es.js');
-
-var rf = new IntlRelativeFormat('es');
+rf = new IntlRelativeFormat('es');
 
 module.exports = function pictureCard(picture) {
   var element;
