@@ -1,7 +1,7 @@
-var LOCALE = 'en-US';
 var MESSAGES = { 'en-US': require('./en-US'), es: require('./es')  };
 var IntlRelativeFormat;
 var IntlMessageFormat;
+var locale = localStorage.locale || 'en-US';
 
 if(!window.Intl) {
   window.Intl = require('intl');
@@ -19,9 +19,9 @@ module.exports = {
     var msg;
 
     options = options || {};
-    msg = new IntlMessageFormat(MESSAGES[LOCALE][text], LOCALE, null);
+    msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
 
     return msg.format(options);
   },
-  date: new IntlRelativeFormat(LOCALE)
+  date: new IntlRelativeFormat(locale)
 }

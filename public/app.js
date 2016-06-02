@@ -8616,14 +8616,19 @@ var element = yoyo`<footer class="site-footer">
     <div class="row">
       <div class="col s12 l3 center-align"><a href="#" data-activates="dropdown1" class="dropdown-button btn btn-flat">${ translate.message('language') }</a>
         <ul id="dropdown1" class="dropdown-content">
-          <li><a href="#!">${ translate.message('spanish') }</a></li>
-          <li><a href="#!">${ translate.message('english') }</a></li>
+          <li><a href="#" onclick=${ changeLanguage.bind(null, 'es') }>${ translate.message('spanish') }</a></li>
+          <li><a href="#" onclick=${ changeLanguage.bind(null, 'en-US') }>${ translate.message('english') }</a></li>
         </ul>
       </div>
       <div class="col s12 l3 push-l6 center-align">© 2016 Platzigram</div>
     </div>
   </div>
 </footer>`;
+
+function changeLanguage(locale) {
+  localStorage.locale = locale;
+  location.reload();
+}
 
 document.body.appendChild(element);
 
@@ -8936,10 +8941,10 @@ module.exports = {
 };
 
 },{}],58:[function(require,module,exports){
-var LOCALE = 'en-US';
 var MESSAGES = { 'en-US': require('./en-US'), es: require('./es') };
 var IntlRelativeFormat;
 var IntlMessageFormat;
+var locale = localStorage.locale || 'en-US';
 
 if (!window.Intl) {
   window.Intl = require('intl');
@@ -8957,11 +8962,11 @@ module.exports = {
     var msg;
 
     options = options || {};
-    msg = new IntlMessageFormat(MESSAGES[LOCALE][text], LOCALE, null);
+    msg = new IntlMessageFormat(MESSAGES[locale][text], locale, null);
 
     return msg.format(options);
   },
-  date: new IntlRelativeFormat(LOCALE)
+  date: new IntlRelativeFormat(locale)
 };
 
 },{"./en-US":56,"./es":57,"intl":30,"intl-messageformat":4,"intl-relativeformat":15,"intl-relativeformat/dist/locale-data/en.js":13,"intl-relativeformat/dist/locale-data/es.js":14,"intl/locale-data/jsonp/en-US.js":32,"intl/locale-data/jsonp/es.js":33}]},{},[48]);
