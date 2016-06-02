@@ -12,7 +12,7 @@ page('/', function (ctx, next) {
         avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
       },
       url: 'http://materializecss.com/images/office.jpg',
-      likes: 100,
+      likes: 0,
       liked: false,
       createdAt: new Date()
     },
@@ -22,7 +22,7 @@ page('/', function (ctx, next) {
         avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
       },
       url: 'http://materializecss.com/images/office.jpg',
-      likes: 20,
+      likes: 2,
       liked: true,
       createdAt: new Date().setDate(new Date().getDate()-10)
     }
