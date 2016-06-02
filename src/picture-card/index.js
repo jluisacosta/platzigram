@@ -1,4 +1,5 @@
 var yoyo = require('yo-yo');
+var moment = require('moment');
 
 module.exports = function pictureCard(picture) {
   var element;
@@ -15,7 +16,7 @@ module.exports = function pictureCard(picture) {
           <img src="${renderPicture.user.avatar}" class="avatar"/>
           <span class="username">${renderPicture.user.username}</span>
         </a>
-        <small class="right time">Hace 1 día</small>
+        <small class="right time">${moment(renderPicture.createdAt).fromNow()}</small>
         <p>
           <a class="left" href="#" onclick=${like.bind(null, true)}><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           <a class="left" href="#" onclick=${like.bind(null, false)}><i class="fa fa-heart" aria-hidden="true"></i></a>
