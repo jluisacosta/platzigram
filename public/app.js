@@ -112,88 +112,2548 @@ module.exports = function emptyElement (element) {
 }
 
 },{}],4:[function(require,module,exports){
-//! moment.js locale configuration
-//! locale : spanish (es)
-//! author : Julio Napurí : https://github.com/julionc
+IntlRelativeFormat.__addLocaleData({"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-001","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-150","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AS","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AT","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-AU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BI","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-BZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CH","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CX","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-CY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DE","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DK","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-DM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-Dsrt","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ER","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FI","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FJ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-FM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GD","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GU","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-GY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-HK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IL","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-IO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-JE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-JM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KE","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KI","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-KY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LR","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-LS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MH","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MP","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MT","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-MY","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NF","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NL","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NR","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-NZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PN","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PR","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-PW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-RW","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SB","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SD","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SE","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SH","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SI","parentLocale":"en-150"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SL","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SX","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-SZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-Shaw","pluralRuleFunction":function (n,ord){if(ord)return"other";return"other"},"fields":{"year":{"displayName":"Year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"other":"+{0} y"},"past":{"other":"-{0} y"}}},"month":{"displayName":"Month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"other":"+{0} m"},"past":{"other":"-{0} m"}}},"day":{"displayName":"Day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"other":"+{0} d"},"past":{"other":"-{0} d"}}},"hour":{"displayName":"Hour","relativeTime":{"future":{"other":"+{0} h"},"past":{"other":"-{0} h"}}},"minute":{"displayName":"Minute","relativeTime":{"future":{"other":"+{0} min"},"past":{"other":"-{0} min"}}},"second":{"displayName":"Second","relative":{"0":"now"},"relativeTime":{"future":{"other":"+{0} s"},"past":{"other":"-{0} s"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TK","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TO","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TT","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TV","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-TZ","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-UG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-UM","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-US","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VC","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VG","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VI","parentLocale":"en"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-VU","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-WS","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZA","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZM","parentLocale":"en-001"});
+IntlRelativeFormat.__addLocaleData({"locale":"en-ZW","parentLocale":"en-001"});
 
-;(function (global, factory) {
-   typeof exports === 'object' && typeof module !== 'undefined'
-       && typeof require === 'function' ? factory(require('../moment')) :
-   typeof define === 'function' && define.amd ? define(['moment'], factory) :
-   factory(global.moment)
-}(this, function (moment) { 'use strict';
+},{}],5:[function(require,module,exports){
+IntlRelativeFormat.__addLocaleData({"locale":"es","pluralRuleFunction":function (n,ord){if(ord)return"other";return n==1?"one":"other"},"fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-419","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-AR","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-BO","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CL","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CO","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CR","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-CU","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-DO","parentLocale":"es-419","fields":{"year":{"displayName":"Año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"Mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"Día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"anteayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"Minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"Segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-EA","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-EC","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-GQ","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-GT","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-HN","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-IC","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-MX","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el año próximo","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el mes próximo","-1":"el mes pasado"},"relativeTime":{"future":{"one":"en {0} mes","other":"en {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-NI","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PA","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PE","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PH","parentLocale":"es"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PR","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-PY","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antes de ayer","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-SV","parentLocale":"es-419","fields":{"year":{"displayName":"año","relative":{"0":"este año","1":"el próximo año","-1":"el año pasado"},"relativeTime":{"future":{"one":"dentro de {0} año","other":"dentro de {0} años"},"past":{"one":"hace {0} año","other":"hace {0} años"}}},"month":{"displayName":"mes","relative":{"0":"este mes","1":"el próximo mes","-1":"el mes pasado"},"relativeTime":{"future":{"one":"dentro de {0} mes","other":"dentro de {0} meses"},"past":{"one":"hace {0} mes","other":"hace {0} meses"}}},"day":{"displayName":"día","relative":{"0":"hoy","1":"mañana","2":"pasado mañana","-2":"antier","-1":"ayer"},"relativeTime":{"future":{"one":"dentro de {0} día","other":"dentro de {0} días"},"past":{"one":"hace {0} día","other":"hace {0} días"}}},"hour":{"displayName":"hora","relativeTime":{"future":{"one":"dentro de {0} hora","other":"dentro de {0} horas"},"past":{"one":"hace {0} hora","other":"hace {0} horas"}}},"minute":{"displayName":"minuto","relativeTime":{"future":{"one":"dentro de {0} minuto","other":"dentro de {0} minutos"},"past":{"one":"hace {0} minuto","other":"hace {0} minutos"}}},"second":{"displayName":"segundo","relative":{"0":"ahora"},"relativeTime":{"future":{"one":"dentro de {0} segundo","other":"dentro de {0} segundos"},"past":{"one":"hace {0} segundo","other":"hace {0} segundos"}}}}});
+IntlRelativeFormat.__addLocaleData({"locale":"es-US","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-UY","parentLocale":"es-419"});
+IntlRelativeFormat.__addLocaleData({"locale":"es-VE","parentLocale":"es-419"});
+
+},{}],6:[function(require,module,exports){
+/* jshint node:true */
+
+'use strict';
+
+var IntlRelativeFormat = require('./lib/main')['default'];
+
+// Add all locale data to `IntlRelativeFormat`. This module will be ignored when
+// bundling for the browser with Browserify/Webpack.
+require('./lib/locales');
+
+// Re-export `IntlRelativeFormat` as the CommonJS default exports with all the
+// locale data registered, and with English set as the default locale. Define
+// the `default` prop for use with other compiled ES6 Modules.
+exports = module.exports = IntlRelativeFormat;
+exports['default'] = exports;
+
+},{"./lib/locales":1,"./lib/main":11}],7:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+var intl$messageformat$$ = require("intl-messageformat"), src$diff$$ = require("./diff"), src$es5$$ = require("./es5");
+exports["default"] = RelativeFormat;
+
+// -----------------------------------------------------------------------------
+
+var FIELDS = ['second', 'minute', 'hour', 'day', 'month', 'year'];
+var STYLES = ['best fit', 'numeric'];
+
+// -- RelativeFormat -----------------------------------------------------------
+
+function RelativeFormat(locales, options) {
+    options = options || {};
+
+    // Make a copy of `locales` if it's an array, so that it doesn't change
+    // since it's used lazily.
+    if (src$es5$$.isArray(locales)) {
+        locales = locales.concat();
+    }
+
+    src$es5$$.defineProperty(this, '_locale', {value: this._resolveLocale(locales)});
+    src$es5$$.defineProperty(this, '_options', {value: {
+        style: this._resolveStyle(options.style),
+        units: this._isValidUnits(options.units) && options.units
+    }});
+
+    src$es5$$.defineProperty(this, '_locales', {value: locales});
+    src$es5$$.defineProperty(this, '_fields', {value: this._findFields(this._locale)});
+    src$es5$$.defineProperty(this, '_messages', {value: src$es5$$.objCreate(null)});
+
+    // "Bind" `format()` method to `this` so it can be passed by reference like
+    // the other `Intl` APIs.
+    var relativeFormat = this;
+    this.format = function format(date, options) {
+        return relativeFormat._format(date, options);
+    };
+}
+
+// Define internal private properties for dealing with locale data.
+src$es5$$.defineProperty(RelativeFormat, '__localeData__', {value: src$es5$$.objCreate(null)});
+src$es5$$.defineProperty(RelativeFormat, '__addLocaleData', {value: function (data) {
+    if (!(data && data.locale)) {
+        throw new Error(
+            'Locale data provided to IntlRelativeFormat is missing a ' +
+            '`locale` property value'
+        );
+    }
+
+    RelativeFormat.__localeData__[data.locale.toLowerCase()] = data;
+
+    // Add data to IntlMessageFormat.
+    intl$messageformat$$["default"].__addLocaleData(data);
+}});
+
+// Define public `defaultLocale` property which can be set by the developer, or
+// it will be set when the first RelativeFormat instance is created by
+// leveraging the resolved locale from `Intl`.
+src$es5$$.defineProperty(RelativeFormat, 'defaultLocale', {
+    enumerable: true,
+    writable  : true,
+    value     : undefined
+});
+
+// Define public `thresholds` property which can be set by the developer, and
+// defaults to relative time thresholds from moment.js.
+src$es5$$.defineProperty(RelativeFormat, 'thresholds', {
+    enumerable: true,
+
+    value: {
+        second: 45,  // seconds to minute
+        minute: 45,  // minutes to hour
+        hour  : 22,  // hours to day
+        day   : 26,  // days to month
+        month : 11   // months to year
+    }
+});
+
+RelativeFormat.prototype.resolvedOptions = function () {
+    return {
+        locale: this._locale,
+        style : this._options.style,
+        units : this._options.units
+    };
+};
+
+RelativeFormat.prototype._compileMessage = function (units) {
+    // `this._locales` is the original set of locales the user specified to the
+    // constructor, while `this._locale` is the resolved root locale.
+    var locales        = this._locales;
+    var resolvedLocale = this._locale;
+
+    var field        = this._fields[units];
+    var relativeTime = field.relativeTime;
+    var future       = '';
+    var past         = '';
+    var i;
+
+    for (i in relativeTime.future) {
+        if (relativeTime.future.hasOwnProperty(i)) {
+            future += ' ' + i + ' {' +
+                relativeTime.future[i].replace('{0}', '#') + '}';
+        }
+    }
+
+    for (i in relativeTime.past) {
+        if (relativeTime.past.hasOwnProperty(i)) {
+            past += ' ' + i + ' {' +
+                relativeTime.past[i].replace('{0}', '#') + '}';
+        }
+    }
+
+    var message = '{when, select, future {{0, plural, ' + future + '}}' +
+                                 'past {{0, plural, ' + past + '}}}';
+
+    // Create the synthetic IntlMessageFormat instance using the original
+    // locales value specified by the user when constructing the the parent
+    // IntlRelativeFormat instance.
+    return new intl$messageformat$$["default"](message, locales);
+};
+
+RelativeFormat.prototype._getMessage = function (units) {
+    var messages = this._messages;
+
+    // Create a new synthetic message based on the locale data from CLDR.
+    if (!messages[units]) {
+        messages[units] = this._compileMessage(units);
+    }
+
+    return messages[units];
+};
+
+RelativeFormat.prototype._getRelativeUnits = function (diff, units) {
+    var field = this._fields[units];
+
+    if (field.relative) {
+        return field.relative[diff];
+    }
+};
+
+RelativeFormat.prototype._findFields = function (locale) {
+    var localeData = RelativeFormat.__localeData__;
+    var data       = localeData[locale.toLowerCase()];
+
+    // The locale data is de-duplicated, so we have to traverse the locale's
+    // hierarchy until we find `fields` to return.
+    while (data) {
+        if (data.fields) {
+            return data.fields;
+        }
+
+        data = data.parentLocale && localeData[data.parentLocale.toLowerCase()];
+    }
+
+    throw new Error(
+        'Locale data added to IntlRelativeFormat is missing `fields` for :' +
+        locale
+    );
+};
+
+RelativeFormat.prototype._format = function (date, options) {
+    var now = options && options.now !== undefined ? options.now : src$es5$$.dateNow();
+
+    if (date === undefined) {
+        date = now;
+    }
+
+    // Determine if the `date` and optional `now` values are valid, and throw a
+    // similar error to what `Intl.DateTimeFormat#format()` would throw.
+    if (!isFinite(now)) {
+        throw new RangeError(
+            'The `now` option provided to IntlRelativeFormat#format() is not ' +
+            'in valid range.'
+        );
+    }
+
+    if (!isFinite(date)) {
+        throw new RangeError(
+            'The date value provided to IntlRelativeFormat#format() is not ' +
+            'in valid range.'
+        );
+    }
+
+    var diffReport  = src$diff$$["default"](now, date);
+    var units       = this._options.units || this._selectUnits(diffReport);
+    var diffInUnits = diffReport[units];
+
+    if (this._options.style !== 'numeric') {
+        var relativeUnits = this._getRelativeUnits(diffInUnits, units);
+        if (relativeUnits) {
+            return relativeUnits;
+        }
+    }
+
+    return this._getMessage(units).format({
+        '0' : Math.abs(diffInUnits),
+        when: diffInUnits < 0 ? 'past' : 'future'
+    });
+};
+
+RelativeFormat.prototype._isValidUnits = function (units) {
+    if (!units || src$es5$$.arrIndexOf.call(FIELDS, units) >= 0) {
+        return true;
+    }
+
+    if (typeof units === 'string') {
+        var suggestion = /s$/.test(units) && units.substr(0, units.length - 1);
+        if (suggestion && src$es5$$.arrIndexOf.call(FIELDS, suggestion) >= 0) {
+            throw new Error(
+                '"' + units + '" is not a valid IntlRelativeFormat `units` ' +
+                'value, did you mean: ' + suggestion
+            );
+        }
+    }
+
+    throw new Error(
+        '"' + units + '" is not a valid IntlRelativeFormat `units` value, it ' +
+        'must be one of: "' + FIELDS.join('", "') + '"'
+    );
+};
+
+RelativeFormat.prototype._resolveLocale = function (locales) {
+    if (typeof locales === 'string') {
+        locales = [locales];
+    }
+
+    // Create a copy of the array so we can push on the default locale.
+    locales = (locales || []).concat(RelativeFormat.defaultLocale);
+
+    var localeData = RelativeFormat.__localeData__;
+    var i, len, localeParts, data;
+
+    // Using the set of locales + the default locale, we look for the first one
+    // which that has been registered. When data does not exist for a locale, we
+    // traverse its ancestors to find something that's been registered within
+    // its hierarchy of locales. Since we lack the proper `parentLocale` data
+    // here, we must take a naive approach to traversal.
+    for (i = 0, len = locales.length; i < len; i += 1) {
+        localeParts = locales[i].toLowerCase().split('-');
+
+        while (localeParts.length) {
+            data = localeData[localeParts.join('-')];
+            if (data) {
+                // Return the normalized locale string; e.g., we return "en-US",
+                // instead of "en-us".
+                return data.locale;
+            }
+
+            localeParts.pop();
+        }
+    }
+
+    var defaultLocale = locales.pop();
+    throw new Error(
+        'No locale data has been added to IntlRelativeFormat for: ' +
+        locales.join(', ') + ', or the default locale: ' + defaultLocale
+    );
+};
+
+RelativeFormat.prototype._resolveStyle = function (style) {
+    // Default to "best fit" style.
+    if (!style) {
+        return STYLES[0];
+    }
+
+    if (src$es5$$.arrIndexOf.call(STYLES, style) >= 0) {
+        return style;
+    }
+
+    throw new Error(
+        '"' + style + '" is not a valid IntlRelativeFormat `style` value, it ' +
+        'must be one of: "' + STYLES.join('", "') + '"'
+    );
+};
+
+RelativeFormat.prototype._selectUnits = function (diffReport) {
+    var i, l, units;
+
+    for (i = 0, l = FIELDS.length; i < l; i += 1) {
+        units = FIELDS[i];
+
+        if (Math.abs(diffReport[units]) < RelativeFormat.thresholds[units]) {
+            break;
+        }
+    }
+
+    return units;
+};
 
 
-    var monthsShortDot = 'ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.'.split('_'),
-        monthsShort = 'ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic'.split('_');
+},{"./diff":8,"./es5":10,"intl-messageformat":12}],8:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
 
-    var es = moment.defineLocale('es', {
-        months : 'enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre'.split('_'),
-        monthsShort : function (m, format) {
-            if (/-MMM-/.test(format)) {
-                return monthsShort[m.month()];
-            } else {
-                return monthsShortDot[m.month()];
+/* jslint esnext: true */
+
+"use strict";
+
+var round = Math.round;
+
+function daysToYears(days) {
+    // 400 years have 146097 days (taking into account leap year rules)
+    return days * 400 / 146097;
+}
+
+exports["default"] = function (from, to) {
+    // Convert to ms timestamps.
+    from = +from;
+    to   = +to;
+
+    var millisecond = round(to - from),
+        second      = round(millisecond / 1000),
+        minute      = round(second / 60),
+        hour        = round(minute / 60),
+        day         = round(hour / 24),
+        week        = round(day / 7);
+
+    var rawYears = daysToYears(day),
+        month    = round(rawYears * 12),
+        year     = round(rawYears);
+
+    return {
+        millisecond: millisecond,
+        second     : second,
+        minute     : minute,
+        hour       : hour,
+        day        : day,
+        week       : week,
+        month      : month,
+        year       : year
+    };
+};
+
+
+},{}],9:[function(require,module,exports){
+// GENERATED FILE
+"use strict";
+exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"},"fields":{"year":{"displayName":"year","relative":{"0":"this year","1":"next year","-1":"last year"},"relativeTime":{"future":{"one":"in {0} year","other":"in {0} years"},"past":{"one":"{0} year ago","other":"{0} years ago"}}},"month":{"displayName":"month","relative":{"0":"this month","1":"next month","-1":"last month"},"relativeTime":{"future":{"one":"in {0} month","other":"in {0} months"},"past":{"one":"{0} month ago","other":"{0} months ago"}}},"day":{"displayName":"day","relative":{"0":"today","1":"tomorrow","-1":"yesterday"},"relativeTime":{"future":{"one":"in {0} day","other":"in {0} days"},"past":{"one":"{0} day ago","other":"{0} days ago"}}},"hour":{"displayName":"hour","relativeTime":{"future":{"one":"in {0} hour","other":"in {0} hours"},"past":{"one":"{0} hour ago","other":"{0} hours ago"}}},"minute":{"displayName":"minute","relativeTime":{"future":{"one":"in {0} minute","other":"in {0} minutes"},"past":{"one":"{0} minute ago","other":"{0} minutes ago"}}},"second":{"displayName":"second","relative":{"0":"now"},"relativeTime":{"future":{"one":"in {0} second","other":"in {0} seconds"},"past":{"one":"{0} second ago","other":"{0} seconds ago"}}}}};
+
+
+},{}],10:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+
+// Purposely using the same implementation as the Intl.js `Intl` polyfill.
+// Copyright 2013 Andy Earnshaw, MIT License
+
+var hop = Object.prototype.hasOwnProperty;
+var toString = Object.prototype.toString;
+
+var realDefineProp = (function () {
+    try { return !!Object.defineProperty({}, 'a', {}); }
+    catch (e) { return false; }
+})();
+
+var es3 = !realDefineProp && !Object.prototype.__defineGetter__;
+
+var defineProperty = realDefineProp ? Object.defineProperty :
+        function (obj, name, desc) {
+
+    if ('get' in desc && obj.__defineGetter__) {
+        obj.__defineGetter__(name, desc.get);
+    } else if (!hop.call(obj, name) || 'value' in desc) {
+        obj[name] = desc.value;
+    }
+};
+
+var objCreate = Object.create || function (proto, props) {
+    var obj, k;
+
+    function F() {}
+    F.prototype = proto;
+    obj = new F();
+
+    for (k in props) {
+        if (hop.call(props, k)) {
+            defineProperty(obj, k, props[k]);
+        }
+    }
+
+    return obj;
+};
+
+var arrIndexOf = Array.prototype.indexOf || function (search, fromIndex) {
+    /*jshint validthis:true */
+    var arr = this;
+    if (!arr.length) {
+        return -1;
+    }
+
+    for (var i = fromIndex || 0, max = arr.length; i < max; i++) {
+        if (arr[i] === search) {
+            return i;
+        }
+    }
+
+    return -1;
+};
+
+var isArray = Array.isArray || function (obj) {
+    return toString.call(obj) === '[object Array]';
+};
+
+var dateNow = Date.now || function () {
+    return new Date().getTime();
+};
+exports.defineProperty = defineProperty, exports.objCreate = objCreate, exports.arrIndexOf = arrIndexOf, exports.isArray = isArray, exports.dateNow = dateNow;
+
+
+},{}],11:[function(require,module,exports){
+/* jslint esnext: true */
+
+"use strict";
+var src$core$$ = require("./core"), src$en$$ = require("./en");
+
+src$core$$["default"].__addLocaleData(src$en$$["default"]);
+src$core$$["default"].defaultLocale = 'en';
+
+exports["default"] = src$core$$["default"];
+
+
+},{"./core":7,"./en":9}],12:[function(require,module,exports){
+/* jshint node:true */
+
+'use strict';
+
+var IntlMessageFormat = require('./lib/main')['default'];
+
+// Add all locale data to `IntlMessageFormat`. This module will be ignored when
+// bundling for the browser with Browserify/Webpack.
+require('./lib/locales');
+
+// Re-export `IntlMessageFormat` as the CommonJS default exports with all the
+// locale data registered, and with English set as the default locale. Define
+// the `default` prop for use with other compiled ES6 Modules.
+exports = module.exports = IntlMessageFormat;
+exports['default'] = exports;
+
+},{"./lib/locales":1,"./lib/main":17}],13:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+exports["default"] = Compiler;
+
+function Compiler(locales, formats, pluralFn) {
+    this.locales  = locales;
+    this.formats  = formats;
+    this.pluralFn = pluralFn;
+}
+
+Compiler.prototype.compile = function (ast) {
+    this.pluralStack        = [];
+    this.currentPlural      = null;
+    this.pluralNumberFormat = null;
+
+    return this.compileMessage(ast);
+};
+
+Compiler.prototype.compileMessage = function (ast) {
+    if (!(ast && ast.type === 'messageFormatPattern')) {
+        throw new Error('Message AST is not of type: "messageFormatPattern"');
+    }
+
+    var elements = ast.elements,
+        pattern  = [];
+
+    var i, len, element;
+
+    for (i = 0, len = elements.length; i < len; i += 1) {
+        element = elements[i];
+
+        switch (element.type) {
+            case 'messageTextElement':
+                pattern.push(this.compileMessageText(element));
+                break;
+
+            case 'argumentElement':
+                pattern.push(this.compileArgument(element));
+                break;
+
+            default:
+                throw new Error('Message element does not have a valid type');
+        }
+    }
+
+    return pattern;
+};
+
+Compiler.prototype.compileMessageText = function (element) {
+    // When this `element` is part of plural sub-pattern and its value contains
+    // an unescaped '#', use a `PluralOffsetString` helper to properly output
+    // the number with the correct offset in the string.
+    if (this.currentPlural && /(^|[^\\])#/g.test(element.value)) {
+        // Create a cache a NumberFormat instance that can be reused for any
+        // PluralOffsetString instance in this message.
+        if (!this.pluralNumberFormat) {
+            this.pluralNumberFormat = new Intl.NumberFormat(this.locales);
+        }
+
+        return new PluralOffsetString(
+                this.currentPlural.id,
+                this.currentPlural.format.offset,
+                this.pluralNumberFormat,
+                element.value);
+    }
+
+    // Unescape the escaped '#'s in the message text.
+    return element.value.replace(/\\#/g, '#');
+};
+
+Compiler.prototype.compileArgument = function (element) {
+    var format = element.format;
+
+    if (!format) {
+        return new StringFormat(element.id);
+    }
+
+    var formats  = this.formats,
+        locales  = this.locales,
+        pluralFn = this.pluralFn,
+        options;
+
+    switch (format.type) {
+        case 'numberFormat':
+            options = formats.number[format.style];
+            return {
+                id    : element.id,
+                format: new Intl.NumberFormat(locales, options).format
+            };
+
+        case 'dateFormat':
+            options = formats.date[format.style];
+            return {
+                id    : element.id,
+                format: new Intl.DateTimeFormat(locales, options).format
+            };
+
+        case 'timeFormat':
+            options = formats.time[format.style];
+            return {
+                id    : element.id,
+                format: new Intl.DateTimeFormat(locales, options).format
+            };
+
+        case 'pluralFormat':
+            options = this.compileOptions(element);
+            return new PluralFormat(
+                element.id, format.ordinal, format.offset, options, pluralFn
+            );
+
+        case 'selectFormat':
+            options = this.compileOptions(element);
+            return new SelectFormat(element.id, options);
+
+        default:
+            throw new Error('Message element does not have a valid format type');
+    }
+};
+
+Compiler.prototype.compileOptions = function (element) {
+    var format      = element.format,
+        options     = format.options,
+        optionsHash = {};
+
+    // Save the current plural element, if any, then set it to a new value when
+    // compiling the options sub-patterns. This conforms the spec's algorithm
+    // for handling `"#"` syntax in message text.
+    this.pluralStack.push(this.currentPlural);
+    this.currentPlural = format.type === 'pluralFormat' ? element : null;
+
+    var i, len, option;
+
+    for (i = 0, len = options.length; i < len; i += 1) {
+        option = options[i];
+
+        // Compile the sub-pattern and save it under the options's selector.
+        optionsHash[option.selector] = this.compileMessage(option.value);
+    }
+
+    // Pop the plural stack to put back the original current plural value.
+    this.currentPlural = this.pluralStack.pop();
+
+    return optionsHash;
+};
+
+// -- Compiler Helper Classes --------------------------------------------------
+
+function StringFormat(id) {
+    this.id = id;
+}
+
+StringFormat.prototype.format = function (value) {
+    if (!value) {
+        return '';
+    }
+
+    return typeof value === 'string' ? value : String(value);
+};
+
+function PluralFormat(id, useOrdinal, offset, options, pluralFn) {
+    this.id         = id;
+    this.useOrdinal = useOrdinal;
+    this.offset     = offset;
+    this.options    = options;
+    this.pluralFn   = pluralFn;
+}
+
+PluralFormat.prototype.getOption = function (value) {
+    var options = this.options;
+
+    var option = options['=' + value] ||
+            options[this.pluralFn(value - this.offset, this.useOrdinal)];
+
+    return option || options.other;
+};
+
+function PluralOffsetString(id, offset, numberFormat, string) {
+    this.id           = id;
+    this.offset       = offset;
+    this.numberFormat = numberFormat;
+    this.string       = string;
+}
+
+PluralOffsetString.prototype.format = function (value) {
+    var number = this.numberFormat.format(value - this.offset);
+
+    return this.string
+            .replace(/(^|[^\\])#/g, '$1' + number)
+            .replace(/\\#/g, '#');
+};
+
+function SelectFormat(id, options) {
+    this.id      = id;
+    this.options = options;
+}
+
+SelectFormat.prototype.getOption = function (value) {
+    var options = this.options;
+    return options[value] || options.other;
+};
+
+
+},{}],14:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+var src$utils$$ = require("./utils"), src$es5$$ = require("./es5"), src$compiler$$ = require("./compiler"), intl$messageformat$parser$$ = require("intl-messageformat-parser");
+exports["default"] = MessageFormat;
+
+// -- MessageFormat --------------------------------------------------------
+
+function MessageFormat(message, locales, formats) {
+    // Parse string messages into an AST.
+    var ast = typeof message === 'string' ?
+            MessageFormat.__parse(message) : message;
+
+    if (!(ast && ast.type === 'messageFormatPattern')) {
+        throw new TypeError('A message must be provided as a String or AST.');
+    }
+
+    // Creates a new object with the specified `formats` merged with the default
+    // formats.
+    formats = this._mergeFormats(MessageFormat.formats, formats);
+
+    // Defined first because it's used to build the format pattern.
+    src$es5$$.defineProperty(this, '_locale',  {value: this._resolveLocale(locales)});
+
+    // Compile the `ast` to a pattern that is highly optimized for repeated
+    // `format()` invocations. **Note:** This passes the `locales` set provided
+    // to the constructor instead of just the resolved locale.
+    var pluralFn = this._findPluralRuleFunction(this._locale);
+    var pattern  = this._compilePattern(ast, locales, formats, pluralFn);
+
+    // "Bind" `format()` method to `this` so it can be passed by reference like
+    // the other `Intl` APIs.
+    var messageFormat = this;
+    this.format = function (values) {
+        return messageFormat._format(pattern, values);
+    };
+}
+
+// Default format options used as the prototype of the `formats` provided to the
+// constructor. These are used when constructing the internal Intl.NumberFormat
+// and Intl.DateTimeFormat instances.
+src$es5$$.defineProperty(MessageFormat, 'formats', {
+    enumerable: true,
+
+    value: {
+        number: {
+            'currency': {
+                style: 'currency'
+            },
+
+            'percent': {
+                style: 'percent'
             }
         },
-        monthsParseExact : true,
-        weekdays : 'domingo_lunes_martes_miércoles_jueves_viernes_sábado'.split('_'),
-        weekdaysShort : 'dom._lun._mar._mié._jue._vie._sáb.'.split('_'),
-        weekdaysMin : 'do_lu_ma_mi_ju_vi_sá'.split('_'),
-        weekdaysParseExact : true,
-        longDateFormat : {
-            LT : 'H:mm',
-            LTS : 'H:mm:ss',
-            L : 'DD/MM/YYYY',
-            LL : 'D [de] MMMM [de] YYYY',
-            LLL : 'D [de] MMMM [de] YYYY H:mm',
-            LLLL : 'dddd, D [de] MMMM [de] YYYY H:mm'
+
+        date: {
+            'short': {
+                month: 'numeric',
+                day  : 'numeric',
+                year : '2-digit'
+            },
+
+            'medium': {
+                month: 'short',
+                day  : 'numeric',
+                year : 'numeric'
+            },
+
+            'long': {
+                month: 'long',
+                day  : 'numeric',
+                year : 'numeric'
+            },
+
+            'full': {
+                weekday: 'long',
+                month  : 'long',
+                day    : 'numeric',
+                year   : 'numeric'
+            }
         },
-        calendar : {
-            sameDay : function () {
-                return '[hoy a la' + ((this.hours() !== 1) ? 's' : '') + '] LT';
+
+        time: {
+            'short': {
+                hour  : 'numeric',
+                minute: 'numeric'
             },
-            nextDay : function () {
-                return '[mañana a la' + ((this.hours() !== 1) ? 's' : '') + '] LT';
+
+            'medium':  {
+                hour  : 'numeric',
+                minute: 'numeric',
+                second: 'numeric'
             },
-            nextWeek : function () {
-                return 'dddd [a la' + ((this.hours() !== 1) ? 's' : '') + '] LT';
+
+            'long': {
+                hour        : 'numeric',
+                minute      : 'numeric',
+                second      : 'numeric',
+                timeZoneName: 'short'
             },
-            lastDay : function () {
-                return '[ayer a la' + ((this.hours() !== 1) ? 's' : '') + '] LT';
-            },
-            lastWeek : function () {
-                return '[el] dddd [pasado a la' + ((this.hours() !== 1) ? 's' : '') + '] LT';
-            },
-            sameElse : 'L'
-        },
-        relativeTime : {
-            future : 'en %s',
-            past : 'hace %s',
-            s : 'unos segundos',
-            m : 'un minuto',
-            mm : '%d minutos',
-            h : 'una hora',
-            hh : '%d horas',
-            d : 'un día',
-            dd : '%d días',
-            M : 'un mes',
-            MM : '%d meses',
-            y : 'un año',
-            yy : '%d años'
-        },
-        ordinalParse : /\d{1,2}º/,
-        ordinal : '%dº',
-        week : {
-            dow : 1, // Monday is the first day of the week.
-            doy : 4  // The week that contains Jan 4th is the first week of the year.
+
+            'full': {
+                hour        : 'numeric',
+                minute      : 'numeric',
+                second      : 'numeric',
+                timeZoneName: 'short'
+            }
         }
-    });
+    }
+});
 
-    return es;
+// Define internal private properties for dealing with locale data.
+src$es5$$.defineProperty(MessageFormat, '__localeData__', {value: src$es5$$.objCreate(null)});
+src$es5$$.defineProperty(MessageFormat, '__addLocaleData', {value: function (data) {
+    if (!(data && data.locale)) {
+        throw new Error(
+            'Locale data provided to IntlMessageFormat is missing a ' +
+            '`locale` property'
+        );
+    }
 
-}));
-},{"../moment":5}],5:[function(require,module,exports){
+    MessageFormat.__localeData__[data.locale.toLowerCase()] = data;
+}});
+
+// Defines `__parse()` static method as an exposed private.
+src$es5$$.defineProperty(MessageFormat, '__parse', {value: intl$messageformat$parser$$["default"].parse});
+
+// Define public `defaultLocale` property which defaults to English, but can be
+// set by the developer.
+src$es5$$.defineProperty(MessageFormat, 'defaultLocale', {
+    enumerable: true,
+    writable  : true,
+    value     : undefined
+});
+
+MessageFormat.prototype.resolvedOptions = function () {
+    // TODO: Provide anything else?
+    return {
+        locale: this._locale
+    };
+};
+
+MessageFormat.prototype._compilePattern = function (ast, locales, formats, pluralFn) {
+    var compiler = new src$compiler$$["default"](locales, formats, pluralFn);
+    return compiler.compile(ast);
+};
+
+MessageFormat.prototype._findPluralRuleFunction = function (locale) {
+    var localeData = MessageFormat.__localeData__;
+    var data       = localeData[locale.toLowerCase()];
+
+    // The locale data is de-duplicated, so we have to traverse the locale's
+    // hierarchy until we find a `pluralRuleFunction` to return.
+    while (data) {
+        if (data.pluralRuleFunction) {
+            return data.pluralRuleFunction;
+        }
+
+        data = data.parentLocale && localeData[data.parentLocale.toLowerCase()];
+    }
+
+    throw new Error(
+        'Locale data added to IntlMessageFormat is missing a ' +
+        '`pluralRuleFunction` for :' + locale
+    );
+};
+
+MessageFormat.prototype._format = function (pattern, values) {
+    var result = '',
+        i, len, part, id, value;
+
+    for (i = 0, len = pattern.length; i < len; i += 1) {
+        part = pattern[i];
+
+        // Exist early for string parts.
+        if (typeof part === 'string') {
+            result += part;
+            continue;
+        }
+
+        id = part.id;
+
+        // Enforce that all required values are provided by the caller.
+        if (!(values && src$utils$$.hop.call(values, id))) {
+            throw new Error('A value must be provided for: ' + id);
+        }
+
+        value = values[id];
+
+        // Recursively format plural and select parts' option — which can be a
+        // nested pattern structure. The choosing of the option to use is
+        // abstracted-by and delegated-to the part helper object.
+        if (part.options) {
+            result += this._format(part.getOption(value), values);
+        } else {
+            result += part.format(value);
+        }
+    }
+
+    return result;
+};
+
+MessageFormat.prototype._mergeFormats = function (defaults, formats) {
+    var mergedFormats = {},
+        type, mergedType;
+
+    for (type in defaults) {
+        if (!src$utils$$.hop.call(defaults, type)) { continue; }
+
+        mergedFormats[type] = mergedType = src$es5$$.objCreate(defaults[type]);
+
+        if (formats && src$utils$$.hop.call(formats, type)) {
+            src$utils$$.extend(mergedType, formats[type]);
+        }
+    }
+
+    return mergedFormats;
+};
+
+MessageFormat.prototype._resolveLocale = function (locales) {
+    if (typeof locales === 'string') {
+        locales = [locales];
+    }
+
+    // Create a copy of the array so we can push on the default locale.
+    locales = (locales || []).concat(MessageFormat.defaultLocale);
+
+    var localeData = MessageFormat.__localeData__;
+    var i, len, localeParts, data;
+
+    // Using the set of locales + the default locale, we look for the first one
+    // which that has been registered. When data does not exist for a locale, we
+    // traverse its ancestors to find something that's been registered within
+    // its hierarchy of locales. Since we lack the proper `parentLocale` data
+    // here, we must take a naive approach to traversal.
+    for (i = 0, len = locales.length; i < len; i += 1) {
+        localeParts = locales[i].toLowerCase().split('-');
+
+        while (localeParts.length) {
+            data = localeData[localeParts.join('-')];
+            if (data) {
+                // Return the normalized locale string; e.g., we return "en-US",
+                // instead of "en-us".
+                return data.locale;
+            }
+
+            localeParts.pop();
+        }
+    }
+
+    var defaultLocale = locales.pop();
+    throw new Error(
+        'No locale data has been added to IntlMessageFormat for: ' +
+        locales.join(', ') + ', or the default locale: ' + defaultLocale
+    );
+};
+
+
+},{"./compiler":13,"./es5":16,"./utils":18,"intl-messageformat-parser":19}],15:[function(require,module,exports){
+// GENERATED FILE
+"use strict";
+exports["default"] = {"locale":"en","pluralRuleFunction":function (n,ord){var s=String(n).split("."),v0=!s[1],t0=Number(s[0])==n,n10=t0&&s[0].slice(-1),n100=t0&&s[0].slice(-2);if(ord)return n10==1&&n100!=11?"one":n10==2&&n100!=12?"two":n10==3&&n100!=13?"few":"other";return n==1&&v0?"one":"other"}};
+
+
+},{}],16:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+var src$utils$$ = require("./utils");
+
+// Purposely using the same implementation as the Intl.js `Intl` polyfill.
+// Copyright 2013 Andy Earnshaw, MIT License
+
+var realDefineProp = (function () {
+    try { return !!Object.defineProperty({}, 'a', {}); }
+    catch (e) { return false; }
+})();
+
+var es3 = !realDefineProp && !Object.prototype.__defineGetter__;
+
+var defineProperty = realDefineProp ? Object.defineProperty :
+        function (obj, name, desc) {
+
+    if ('get' in desc && obj.__defineGetter__) {
+        obj.__defineGetter__(name, desc.get);
+    } else if (!src$utils$$.hop.call(obj, name) || 'value' in desc) {
+        obj[name] = desc.value;
+    }
+};
+
+var objCreate = Object.create || function (proto, props) {
+    var obj, k;
+
+    function F() {}
+    F.prototype = proto;
+    obj = new F();
+
+    for (k in props) {
+        if (src$utils$$.hop.call(props, k)) {
+            defineProperty(obj, k, props[k]);
+        }
+    }
+
+    return obj;
+};
+exports.defineProperty = defineProperty, exports.objCreate = objCreate;
+
+
+},{"./utils":18}],17:[function(require,module,exports){
+arguments[4][11][0].apply(exports,arguments)
+},{"./core":14,"./en":15,"dup":11}],18:[function(require,module,exports){
+/*
+Copyright (c) 2014, Yahoo! Inc. All rights reserved.
+Copyrights licensed under the New BSD License.
+See the accompanying LICENSE file for terms.
+*/
+
+/* jslint esnext: true */
+
+"use strict";
+exports.extend = extend;
+var hop = Object.prototype.hasOwnProperty;
+
+function extend(obj) {
+    var sources = Array.prototype.slice.call(arguments, 1),
+        i, len, source, key;
+
+    for (i = 0, len = sources.length; i < len; i += 1) {
+        source = sources[i];
+        if (!source) { continue; }
+
+        for (key in source) {
+            if (hop.call(source, key)) {
+                obj[key] = source[key];
+            }
+        }
+    }
+
+    return obj;
+}
+exports.hop = hop;
+
+
+},{}],19:[function(require,module,exports){
+'use strict';
+
+exports = module.exports = require('./lib/parser')['default'];
+exports['default'] = exports;
+
+},{"./lib/parser":20}],20:[function(require,module,exports){
+"use strict";
+
+exports["default"] = (function() {
+  /*
+   * Generated by PEG.js 0.8.0.
+   *
+   * http://pegjs.majda.cz/
+   */
+
+  function peg$subclass(child, parent) {
+    function ctor() { this.constructor = child; }
+    ctor.prototype = parent.prototype;
+    child.prototype = new ctor();
+  }
+
+  function SyntaxError(message, expected, found, offset, line, column) {
+    this.message  = message;
+    this.expected = expected;
+    this.found    = found;
+    this.offset   = offset;
+    this.line     = line;
+    this.column   = column;
+
+    this.name     = "SyntaxError";
+  }
+
+  peg$subclass(SyntaxError, Error);
+
+  function parse(input) {
+    var options = arguments.length > 1 ? arguments[1] : {},
+
+        peg$FAILED = {},
+
+        peg$startRuleFunctions = { start: peg$parsestart },
+        peg$startRuleFunction  = peg$parsestart,
+
+        peg$c0 = [],
+        peg$c1 = function(elements) {
+                return {
+                    type    : 'messageFormatPattern',
+                    elements: elements
+                };
+            },
+        peg$c2 = peg$FAILED,
+        peg$c3 = function(text) {
+                var string = '',
+                    i, j, outerLen, inner, innerLen;
+
+                for (i = 0, outerLen = text.length; i < outerLen; i += 1) {
+                    inner = text[i];
+
+                    for (j = 0, innerLen = inner.length; j < innerLen; j += 1) {
+                        string += inner[j];
+                    }
+                }
+
+                return string;
+            },
+        peg$c4 = function(messageText) {
+                return {
+                    type : 'messageTextElement',
+                    value: messageText
+                };
+            },
+        peg$c5 = /^[^ \t\n\r,.+={}#]/,
+        peg$c6 = { type: "class", value: "[^ \\t\\n\\r,.+={}#]", description: "[^ \\t\\n\\r,.+={}#]" },
+        peg$c7 = "{",
+        peg$c8 = { type: "literal", value: "{", description: "\"{\"" },
+        peg$c9 = null,
+        peg$c10 = ",",
+        peg$c11 = { type: "literal", value: ",", description: "\",\"" },
+        peg$c12 = "}",
+        peg$c13 = { type: "literal", value: "}", description: "\"}\"" },
+        peg$c14 = function(id, format) {
+                return {
+                    type  : 'argumentElement',
+                    id    : id,
+                    format: format && format[2]
+                };
+            },
+        peg$c15 = "number",
+        peg$c16 = { type: "literal", value: "number", description: "\"number\"" },
+        peg$c17 = "date",
+        peg$c18 = { type: "literal", value: "date", description: "\"date\"" },
+        peg$c19 = "time",
+        peg$c20 = { type: "literal", value: "time", description: "\"time\"" },
+        peg$c21 = function(type, style) {
+                return {
+                    type : type + 'Format',
+                    style: style && style[2]
+                };
+            },
+        peg$c22 = "plural",
+        peg$c23 = { type: "literal", value: "plural", description: "\"plural\"" },
+        peg$c24 = function(pluralStyle) {
+                return {
+                    type   : pluralStyle.type,
+                    ordinal: false,
+                    offset : pluralStyle.offset || 0,
+                    options: pluralStyle.options
+                };
+            },
+        peg$c25 = "selectordinal",
+        peg$c26 = { type: "literal", value: "selectordinal", description: "\"selectordinal\"" },
+        peg$c27 = function(pluralStyle) {
+                return {
+                    type   : pluralStyle.type,
+                    ordinal: true,
+                    offset : pluralStyle.offset || 0,
+                    options: pluralStyle.options
+                }
+            },
+        peg$c28 = "select",
+        peg$c29 = { type: "literal", value: "select", description: "\"select\"" },
+        peg$c30 = function(options) {
+                return {
+                    type   : 'selectFormat',
+                    options: options
+                };
+            },
+        peg$c31 = "=",
+        peg$c32 = { type: "literal", value: "=", description: "\"=\"" },
+        peg$c33 = function(selector, pattern) {
+                return {
+                    type    : 'optionalFormatPattern',
+                    selector: selector,
+                    value   : pattern
+                };
+            },
+        peg$c34 = "offset:",
+        peg$c35 = { type: "literal", value: "offset:", description: "\"offset:\"" },
+        peg$c36 = function(number) {
+                return number;
+            },
+        peg$c37 = function(offset, options) {
+                return {
+                    type   : 'pluralFormat',
+                    offset : offset,
+                    options: options
+                };
+            },
+        peg$c38 = { type: "other", description: "whitespace" },
+        peg$c39 = /^[ \t\n\r]/,
+        peg$c40 = { type: "class", value: "[ \\t\\n\\r]", description: "[ \\t\\n\\r]" },
+        peg$c41 = { type: "other", description: "optionalWhitespace" },
+        peg$c42 = /^[0-9]/,
+        peg$c43 = { type: "class", value: "[0-9]", description: "[0-9]" },
+        peg$c44 = /^[0-9a-f]/i,
+        peg$c45 = { type: "class", value: "[0-9a-f]i", description: "[0-9a-f]i" },
+        peg$c46 = "0",
+        peg$c47 = { type: "literal", value: "0", description: "\"0\"" },
+        peg$c48 = /^[1-9]/,
+        peg$c49 = { type: "class", value: "[1-9]", description: "[1-9]" },
+        peg$c50 = function(digits) {
+            return parseInt(digits, 10);
+        },
+        peg$c51 = /^[^{}\\\0-\x1F \t\n\r]/,
+        peg$c52 = { type: "class", value: "[^{}\\\\\\0-\\x1F \\t\\n\\r]", description: "[^{}\\\\\\0-\\x1F \\t\\n\\r]" },
+        peg$c53 = "\\\\",
+        peg$c54 = { type: "literal", value: "\\\\", description: "\"\\\\\\\\\"" },
+        peg$c55 = function() { return '\\'; },
+        peg$c56 = "\\#",
+        peg$c57 = { type: "literal", value: "\\#", description: "\"\\\\#\"" },
+        peg$c58 = function() { return '\\#'; },
+        peg$c59 = "\\{",
+        peg$c60 = { type: "literal", value: "\\{", description: "\"\\\\{\"" },
+        peg$c61 = function() { return '\u007B'; },
+        peg$c62 = "\\}",
+        peg$c63 = { type: "literal", value: "\\}", description: "\"\\\\}\"" },
+        peg$c64 = function() { return '\u007D'; },
+        peg$c65 = "\\u",
+        peg$c66 = { type: "literal", value: "\\u", description: "\"\\\\u\"" },
+        peg$c67 = function(digits) {
+                return String.fromCharCode(parseInt(digits, 16));
+            },
+        peg$c68 = function(chars) { return chars.join(''); },
+
+        peg$currPos          = 0,
+        peg$reportedPos      = 0,
+        peg$cachedPos        = 0,
+        peg$cachedPosDetails = { line: 1, column: 1, seenCR: false },
+        peg$maxFailPos       = 0,
+        peg$maxFailExpected  = [],
+        peg$silentFails      = 0,
+
+        peg$result;
+
+    if ("startRule" in options) {
+      if (!(options.startRule in peg$startRuleFunctions)) {
+        throw new Error("Can't start parsing from rule \"" + options.startRule + "\".");
+      }
+
+      peg$startRuleFunction = peg$startRuleFunctions[options.startRule];
+    }
+
+    function text() {
+      return input.substring(peg$reportedPos, peg$currPos);
+    }
+
+    function offset() {
+      return peg$reportedPos;
+    }
+
+    function line() {
+      return peg$computePosDetails(peg$reportedPos).line;
+    }
+
+    function column() {
+      return peg$computePosDetails(peg$reportedPos).column;
+    }
+
+    function expected(description) {
+      throw peg$buildException(
+        null,
+        [{ type: "other", description: description }],
+        peg$reportedPos
+      );
+    }
+
+    function error(message) {
+      throw peg$buildException(message, null, peg$reportedPos);
+    }
+
+    function peg$computePosDetails(pos) {
+      function advance(details, startPos, endPos) {
+        var p, ch;
+
+        for (p = startPos; p < endPos; p++) {
+          ch = input.charAt(p);
+          if (ch === "\n") {
+            if (!details.seenCR) { details.line++; }
+            details.column = 1;
+            details.seenCR = false;
+          } else if (ch === "\r" || ch === "\u2028" || ch === "\u2029") {
+            details.line++;
+            details.column = 1;
+            details.seenCR = true;
+          } else {
+            details.column++;
+            details.seenCR = false;
+          }
+        }
+      }
+
+      if (peg$cachedPos !== pos) {
+        if (peg$cachedPos > pos) {
+          peg$cachedPos = 0;
+          peg$cachedPosDetails = { line: 1, column: 1, seenCR: false };
+        }
+        advance(peg$cachedPosDetails, peg$cachedPos, pos);
+        peg$cachedPos = pos;
+      }
+
+      return peg$cachedPosDetails;
+    }
+
+    function peg$fail(expected) {
+      if (peg$currPos < peg$maxFailPos) { return; }
+
+      if (peg$currPos > peg$maxFailPos) {
+        peg$maxFailPos = peg$currPos;
+        peg$maxFailExpected = [];
+      }
+
+      peg$maxFailExpected.push(expected);
+    }
+
+    function peg$buildException(message, expected, pos) {
+      function cleanupExpected(expected) {
+        var i = 1;
+
+        expected.sort(function(a, b) {
+          if (a.description < b.description) {
+            return -1;
+          } else if (a.description > b.description) {
+            return 1;
+          } else {
+            return 0;
+          }
+        });
+
+        while (i < expected.length) {
+          if (expected[i - 1] === expected[i]) {
+            expected.splice(i, 1);
+          } else {
+            i++;
+          }
+        }
+      }
+
+      function buildMessage(expected, found) {
+        function stringEscape(s) {
+          function hex(ch) { return ch.charCodeAt(0).toString(16).toUpperCase(); }
+
+          return s
+            .replace(/\\/g,   '\\\\')
+            .replace(/"/g,    '\\"')
+            .replace(/\x08/g, '\\b')
+            .replace(/\t/g,   '\\t')
+            .replace(/\n/g,   '\\n')
+            .replace(/\f/g,   '\\f')
+            .replace(/\r/g,   '\\r')
+            .replace(/[\x00-\x07\x0B\x0E\x0F]/g, function(ch) { return '\\x0' + hex(ch); })
+            .replace(/[\x10-\x1F\x80-\xFF]/g,    function(ch) { return '\\x'  + hex(ch); })
+            .replace(/[\u0180-\u0FFF]/g,         function(ch) { return '\\u0' + hex(ch); })
+            .replace(/[\u1080-\uFFFF]/g,         function(ch) { return '\\u'  + hex(ch); });
+        }
+
+        var expectedDescs = new Array(expected.length),
+            expectedDesc, foundDesc, i;
+
+        for (i = 0; i < expected.length; i++) {
+          expectedDescs[i] = expected[i].description;
+        }
+
+        expectedDesc = expected.length > 1
+          ? expectedDescs.slice(0, -1).join(", ")
+              + " or "
+              + expectedDescs[expected.length - 1]
+          : expectedDescs[0];
+
+        foundDesc = found ? "\"" + stringEscape(found) + "\"" : "end of input";
+
+        return "Expected " + expectedDesc + " but " + foundDesc + " found.";
+      }
+
+      var posDetails = peg$computePosDetails(pos),
+          found      = pos < input.length ? input.charAt(pos) : null;
+
+      if (expected !== null) {
+        cleanupExpected(expected);
+      }
+
+      return new SyntaxError(
+        message !== null ? message : buildMessage(expected, found),
+        expected,
+        found,
+        pos,
+        posDetails.line,
+        posDetails.column
+      );
+    }
+
+    function peg$parsestart() {
+      var s0;
+
+      s0 = peg$parsemessageFormatPattern();
+
+      return s0;
+    }
+
+    function peg$parsemessageFormatPattern() {
+      var s0, s1, s2;
+
+      s0 = peg$currPos;
+      s1 = [];
+      s2 = peg$parsemessageFormatElement();
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        s2 = peg$parsemessageFormatElement();
+      }
+      if (s1 !== peg$FAILED) {
+        peg$reportedPos = s0;
+        s1 = peg$c1(s1);
+      }
+      s0 = s1;
+
+      return s0;
+    }
+
+    function peg$parsemessageFormatElement() {
+      var s0;
+
+      s0 = peg$parsemessageTextElement();
+      if (s0 === peg$FAILED) {
+        s0 = peg$parseargumentElement();
+      }
+
+      return s0;
+    }
+
+    function peg$parsemessageText() {
+      var s0, s1, s2, s3, s4, s5;
+
+      s0 = peg$currPos;
+      s1 = [];
+      s2 = peg$currPos;
+      s3 = peg$parse_();
+      if (s3 !== peg$FAILED) {
+        s4 = peg$parsechars();
+        if (s4 !== peg$FAILED) {
+          s5 = peg$parse_();
+          if (s5 !== peg$FAILED) {
+            s3 = [s3, s4, s5];
+            s2 = s3;
+          } else {
+            peg$currPos = s2;
+            s2 = peg$c2;
+          }
+        } else {
+          peg$currPos = s2;
+          s2 = peg$c2;
+        }
+      } else {
+        peg$currPos = s2;
+        s2 = peg$c2;
+      }
+      if (s2 !== peg$FAILED) {
+        while (s2 !== peg$FAILED) {
+          s1.push(s2);
+          s2 = peg$currPos;
+          s3 = peg$parse_();
+          if (s3 !== peg$FAILED) {
+            s4 = peg$parsechars();
+            if (s4 !== peg$FAILED) {
+              s5 = peg$parse_();
+              if (s5 !== peg$FAILED) {
+                s3 = [s3, s4, s5];
+                s2 = s3;
+              } else {
+                peg$currPos = s2;
+                s2 = peg$c2;
+              }
+            } else {
+              peg$currPos = s2;
+              s2 = peg$c2;
+            }
+          } else {
+            peg$currPos = s2;
+            s2 = peg$c2;
+          }
+        }
+      } else {
+        s1 = peg$c2;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$reportedPos = s0;
+        s1 = peg$c3(s1);
+      }
+      s0 = s1;
+      if (s0 === peg$FAILED) {
+        s0 = peg$currPos;
+        s1 = peg$parsews();
+        if (s1 !== peg$FAILED) {
+          s1 = input.substring(s0, peg$currPos);
+        }
+        s0 = s1;
+      }
+
+      return s0;
+    }
+
+    function peg$parsemessageTextElement() {
+      var s0, s1;
+
+      s0 = peg$currPos;
+      s1 = peg$parsemessageText();
+      if (s1 !== peg$FAILED) {
+        peg$reportedPos = s0;
+        s1 = peg$c4(s1);
+      }
+      s0 = s1;
+
+      return s0;
+    }
+
+    function peg$parseargument() {
+      var s0, s1, s2;
+
+      s0 = peg$parsenumber();
+      if (s0 === peg$FAILED) {
+        s0 = peg$currPos;
+        s1 = [];
+        if (peg$c5.test(input.charAt(peg$currPos))) {
+          s2 = input.charAt(peg$currPos);
+          peg$currPos++;
+        } else {
+          s2 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c6); }
+        }
+        if (s2 !== peg$FAILED) {
+          while (s2 !== peg$FAILED) {
+            s1.push(s2);
+            if (peg$c5.test(input.charAt(peg$currPos))) {
+              s2 = input.charAt(peg$currPos);
+              peg$currPos++;
+            } else {
+              s2 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c6); }
+            }
+          }
+        } else {
+          s1 = peg$c2;
+        }
+        if (s1 !== peg$FAILED) {
+          s1 = input.substring(s0, peg$currPos);
+        }
+        s0 = s1;
+      }
+
+      return s0;
+    }
+
+    function peg$parseargumentElement() {
+      var s0, s1, s2, s3, s4, s5, s6, s7, s8;
+
+      s0 = peg$currPos;
+      if (input.charCodeAt(peg$currPos) === 123) {
+        s1 = peg$c7;
+        peg$currPos++;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c8); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          s3 = peg$parseargument();
+          if (s3 !== peg$FAILED) {
+            s4 = peg$parse_();
+            if (s4 !== peg$FAILED) {
+              s5 = peg$currPos;
+              if (input.charCodeAt(peg$currPos) === 44) {
+                s6 = peg$c10;
+                peg$currPos++;
+              } else {
+                s6 = peg$FAILED;
+                if (peg$silentFails === 0) { peg$fail(peg$c11); }
+              }
+              if (s6 !== peg$FAILED) {
+                s7 = peg$parse_();
+                if (s7 !== peg$FAILED) {
+                  s8 = peg$parseelementFormat();
+                  if (s8 !== peg$FAILED) {
+                    s6 = [s6, s7, s8];
+                    s5 = s6;
+                  } else {
+                    peg$currPos = s5;
+                    s5 = peg$c2;
+                  }
+                } else {
+                  peg$currPos = s5;
+                  s5 = peg$c2;
+                }
+              } else {
+                peg$currPos = s5;
+                s5 = peg$c2;
+              }
+              if (s5 === peg$FAILED) {
+                s5 = peg$c9;
+              }
+              if (s5 !== peg$FAILED) {
+                s6 = peg$parse_();
+                if (s6 !== peg$FAILED) {
+                  if (input.charCodeAt(peg$currPos) === 125) {
+                    s7 = peg$c12;
+                    peg$currPos++;
+                  } else {
+                    s7 = peg$FAILED;
+                    if (peg$silentFails === 0) { peg$fail(peg$c13); }
+                  }
+                  if (s7 !== peg$FAILED) {
+                    peg$reportedPos = s0;
+                    s1 = peg$c14(s3, s5);
+                    s0 = s1;
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$c2;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$c2;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$c2;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$c2;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parseelementFormat() {
+      var s0;
+
+      s0 = peg$parsesimpleFormat();
+      if (s0 === peg$FAILED) {
+        s0 = peg$parsepluralFormat();
+        if (s0 === peg$FAILED) {
+          s0 = peg$parseselectOrdinalFormat();
+          if (s0 === peg$FAILED) {
+            s0 = peg$parseselectFormat();
+          }
+        }
+      }
+
+      return s0;
+    }
+
+    function peg$parsesimpleFormat() {
+      var s0, s1, s2, s3, s4, s5, s6;
+
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 6) === peg$c15) {
+        s1 = peg$c15;
+        peg$currPos += 6;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c16); }
+      }
+      if (s1 === peg$FAILED) {
+        if (input.substr(peg$currPos, 4) === peg$c17) {
+          s1 = peg$c17;
+          peg$currPos += 4;
+        } else {
+          s1 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c18); }
+        }
+        if (s1 === peg$FAILED) {
+          if (input.substr(peg$currPos, 4) === peg$c19) {
+            s1 = peg$c19;
+            peg$currPos += 4;
+          } else {
+            s1 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c20); }
+          }
+        }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          s3 = peg$currPos;
+          if (input.charCodeAt(peg$currPos) === 44) {
+            s4 = peg$c10;
+            peg$currPos++;
+          } else {
+            s4 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
+          }
+          if (s4 !== peg$FAILED) {
+            s5 = peg$parse_();
+            if (s5 !== peg$FAILED) {
+              s6 = peg$parsechars();
+              if (s6 !== peg$FAILED) {
+                s4 = [s4, s5, s6];
+                s3 = s4;
+              } else {
+                peg$currPos = s3;
+                s3 = peg$c2;
+              }
+            } else {
+              peg$currPos = s3;
+              s3 = peg$c2;
+            }
+          } else {
+            peg$currPos = s3;
+            s3 = peg$c2;
+          }
+          if (s3 === peg$FAILED) {
+            s3 = peg$c9;
+          }
+          if (s3 !== peg$FAILED) {
+            peg$reportedPos = s0;
+            s1 = peg$c21(s1, s3);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parsepluralFormat() {
+      var s0, s1, s2, s3, s4, s5;
+
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 6) === peg$c22) {
+        s1 = peg$c22;
+        peg$currPos += 6;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c23); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 44) {
+            s3 = peg$c10;
+            peg$currPos++;
+          } else {
+            s3 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
+          }
+          if (s3 !== peg$FAILED) {
+            s4 = peg$parse_();
+            if (s4 !== peg$FAILED) {
+              s5 = peg$parsepluralStyle();
+              if (s5 !== peg$FAILED) {
+                peg$reportedPos = s0;
+                s1 = peg$c24(s5);
+                s0 = s1;
+              } else {
+                peg$currPos = s0;
+                s0 = peg$c2;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$c2;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parseselectOrdinalFormat() {
+      var s0, s1, s2, s3, s4, s5;
+
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 13) === peg$c25) {
+        s1 = peg$c25;
+        peg$currPos += 13;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c26); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 44) {
+            s3 = peg$c10;
+            peg$currPos++;
+          } else {
+            s3 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
+          }
+          if (s3 !== peg$FAILED) {
+            s4 = peg$parse_();
+            if (s4 !== peg$FAILED) {
+              s5 = peg$parsepluralStyle();
+              if (s5 !== peg$FAILED) {
+                peg$reportedPos = s0;
+                s1 = peg$c27(s5);
+                s0 = s1;
+              } else {
+                peg$currPos = s0;
+                s0 = peg$c2;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$c2;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parseselectFormat() {
+      var s0, s1, s2, s3, s4, s5, s6;
+
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 6) === peg$c28) {
+        s1 = peg$c28;
+        peg$currPos += 6;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c29); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          if (input.charCodeAt(peg$currPos) === 44) {
+            s3 = peg$c10;
+            peg$currPos++;
+          } else {
+            s3 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c11); }
+          }
+          if (s3 !== peg$FAILED) {
+            s4 = peg$parse_();
+            if (s4 !== peg$FAILED) {
+              s5 = [];
+              s6 = peg$parseoptionalFormatPattern();
+              if (s6 !== peg$FAILED) {
+                while (s6 !== peg$FAILED) {
+                  s5.push(s6);
+                  s6 = peg$parseoptionalFormatPattern();
+                }
+              } else {
+                s5 = peg$c2;
+              }
+              if (s5 !== peg$FAILED) {
+                peg$reportedPos = s0;
+                s1 = peg$c30(s5);
+                s0 = s1;
+              } else {
+                peg$currPos = s0;
+                s0 = peg$c2;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$c2;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parseselector() {
+      var s0, s1, s2, s3;
+
+      s0 = peg$currPos;
+      s1 = peg$currPos;
+      if (input.charCodeAt(peg$currPos) === 61) {
+        s2 = peg$c31;
+        peg$currPos++;
+      } else {
+        s2 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c32); }
+      }
+      if (s2 !== peg$FAILED) {
+        s3 = peg$parsenumber();
+        if (s3 !== peg$FAILED) {
+          s2 = [s2, s3];
+          s1 = s2;
+        } else {
+          peg$currPos = s1;
+          s1 = peg$c2;
+        }
+      } else {
+        peg$currPos = s1;
+        s1 = peg$c2;
+      }
+      if (s1 !== peg$FAILED) {
+        s1 = input.substring(s0, peg$currPos);
+      }
+      s0 = s1;
+      if (s0 === peg$FAILED) {
+        s0 = peg$parsechars();
+      }
+
+      return s0;
+    }
+
+    function peg$parseoptionalFormatPattern() {
+      var s0, s1, s2, s3, s4, s5, s6, s7, s8;
+
+      s0 = peg$currPos;
+      s1 = peg$parse_();
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parseselector();
+        if (s2 !== peg$FAILED) {
+          s3 = peg$parse_();
+          if (s3 !== peg$FAILED) {
+            if (input.charCodeAt(peg$currPos) === 123) {
+              s4 = peg$c7;
+              peg$currPos++;
+            } else {
+              s4 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c8); }
+            }
+            if (s4 !== peg$FAILED) {
+              s5 = peg$parse_();
+              if (s5 !== peg$FAILED) {
+                s6 = peg$parsemessageFormatPattern();
+                if (s6 !== peg$FAILED) {
+                  s7 = peg$parse_();
+                  if (s7 !== peg$FAILED) {
+                    if (input.charCodeAt(peg$currPos) === 125) {
+                      s8 = peg$c12;
+                      peg$currPos++;
+                    } else {
+                      s8 = peg$FAILED;
+                      if (peg$silentFails === 0) { peg$fail(peg$c13); }
+                    }
+                    if (s8 !== peg$FAILED) {
+                      peg$reportedPos = s0;
+                      s1 = peg$c33(s2, s6);
+                      s0 = s1;
+                    } else {
+                      peg$currPos = s0;
+                      s0 = peg$c2;
+                    }
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$c2;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$c2;
+                }
+              } else {
+                peg$currPos = s0;
+                s0 = peg$c2;
+              }
+            } else {
+              peg$currPos = s0;
+              s0 = peg$c2;
+            }
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parseoffset() {
+      var s0, s1, s2, s3;
+
+      s0 = peg$currPos;
+      if (input.substr(peg$currPos, 7) === peg$c34) {
+        s1 = peg$c34;
+        peg$currPos += 7;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c35); }
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          s3 = peg$parsenumber();
+          if (s3 !== peg$FAILED) {
+            peg$reportedPos = s0;
+            s1 = peg$c36(s3);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parsepluralStyle() {
+      var s0, s1, s2, s3, s4;
+
+      s0 = peg$currPos;
+      s1 = peg$parseoffset();
+      if (s1 === peg$FAILED) {
+        s1 = peg$c9;
+      }
+      if (s1 !== peg$FAILED) {
+        s2 = peg$parse_();
+        if (s2 !== peg$FAILED) {
+          s3 = [];
+          s4 = peg$parseoptionalFormatPattern();
+          if (s4 !== peg$FAILED) {
+            while (s4 !== peg$FAILED) {
+              s3.push(s4);
+              s4 = peg$parseoptionalFormatPattern();
+            }
+          } else {
+            s3 = peg$c2;
+          }
+          if (s3 !== peg$FAILED) {
+            peg$reportedPos = s0;
+            s1 = peg$c37(s1, s3);
+            s0 = s1;
+          } else {
+            peg$currPos = s0;
+            s0 = peg$c2;
+          }
+        } else {
+          peg$currPos = s0;
+          s0 = peg$c2;
+        }
+      } else {
+        peg$currPos = s0;
+        s0 = peg$c2;
+      }
+
+      return s0;
+    }
+
+    function peg$parsews() {
+      var s0, s1;
+
+      peg$silentFails++;
+      s0 = [];
+      if (peg$c39.test(input.charAt(peg$currPos))) {
+        s1 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c40); }
+      }
+      if (s1 !== peg$FAILED) {
+        while (s1 !== peg$FAILED) {
+          s0.push(s1);
+          if (peg$c39.test(input.charAt(peg$currPos))) {
+            s1 = input.charAt(peg$currPos);
+            peg$currPos++;
+          } else {
+            s1 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c40); }
+          }
+        }
+      } else {
+        s0 = peg$c2;
+      }
+      peg$silentFails--;
+      if (s0 === peg$FAILED) {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c38); }
+      }
+
+      return s0;
+    }
+
+    function peg$parse_() {
+      var s0, s1, s2;
+
+      peg$silentFails++;
+      s0 = peg$currPos;
+      s1 = [];
+      s2 = peg$parsews();
+      while (s2 !== peg$FAILED) {
+        s1.push(s2);
+        s2 = peg$parsews();
+      }
+      if (s1 !== peg$FAILED) {
+        s1 = input.substring(s0, peg$currPos);
+      }
+      s0 = s1;
+      peg$silentFails--;
+      if (s0 === peg$FAILED) {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c41); }
+      }
+
+      return s0;
+    }
+
+    function peg$parsedigit() {
+      var s0;
+
+      if (peg$c42.test(input.charAt(peg$currPos))) {
+        s0 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s0 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c43); }
+      }
+
+      return s0;
+    }
+
+    function peg$parsehexDigit() {
+      var s0;
+
+      if (peg$c44.test(input.charAt(peg$currPos))) {
+        s0 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s0 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c45); }
+      }
+
+      return s0;
+    }
+
+    function peg$parsenumber() {
+      var s0, s1, s2, s3, s4, s5;
+
+      s0 = peg$currPos;
+      if (input.charCodeAt(peg$currPos) === 48) {
+        s1 = peg$c46;
+        peg$currPos++;
+      } else {
+        s1 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c47); }
+      }
+      if (s1 === peg$FAILED) {
+        s1 = peg$currPos;
+        s2 = peg$currPos;
+        if (peg$c48.test(input.charAt(peg$currPos))) {
+          s3 = input.charAt(peg$currPos);
+          peg$currPos++;
+        } else {
+          s3 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c49); }
+        }
+        if (s3 !== peg$FAILED) {
+          s4 = [];
+          s5 = peg$parsedigit();
+          while (s5 !== peg$FAILED) {
+            s4.push(s5);
+            s5 = peg$parsedigit();
+          }
+          if (s4 !== peg$FAILED) {
+            s3 = [s3, s4];
+            s2 = s3;
+          } else {
+            peg$currPos = s2;
+            s2 = peg$c2;
+          }
+        } else {
+          peg$currPos = s2;
+          s2 = peg$c2;
+        }
+        if (s2 !== peg$FAILED) {
+          s2 = input.substring(s1, peg$currPos);
+        }
+        s1 = s2;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$reportedPos = s0;
+        s1 = peg$c50(s1);
+      }
+      s0 = s1;
+
+      return s0;
+    }
+
+    function peg$parsechar() {
+      var s0, s1, s2, s3, s4, s5, s6, s7;
+
+      if (peg$c51.test(input.charAt(peg$currPos))) {
+        s0 = input.charAt(peg$currPos);
+        peg$currPos++;
+      } else {
+        s0 = peg$FAILED;
+        if (peg$silentFails === 0) { peg$fail(peg$c52); }
+      }
+      if (s0 === peg$FAILED) {
+        s0 = peg$currPos;
+        if (input.substr(peg$currPos, 2) === peg$c53) {
+          s1 = peg$c53;
+          peg$currPos += 2;
+        } else {
+          s1 = peg$FAILED;
+          if (peg$silentFails === 0) { peg$fail(peg$c54); }
+        }
+        if (s1 !== peg$FAILED) {
+          peg$reportedPos = s0;
+          s1 = peg$c55();
+        }
+        s0 = s1;
+        if (s0 === peg$FAILED) {
+          s0 = peg$currPos;
+          if (input.substr(peg$currPos, 2) === peg$c56) {
+            s1 = peg$c56;
+            peg$currPos += 2;
+          } else {
+            s1 = peg$FAILED;
+            if (peg$silentFails === 0) { peg$fail(peg$c57); }
+          }
+          if (s1 !== peg$FAILED) {
+            peg$reportedPos = s0;
+            s1 = peg$c58();
+          }
+          s0 = s1;
+          if (s0 === peg$FAILED) {
+            s0 = peg$currPos;
+            if (input.substr(peg$currPos, 2) === peg$c59) {
+              s1 = peg$c59;
+              peg$currPos += 2;
+            } else {
+              s1 = peg$FAILED;
+              if (peg$silentFails === 0) { peg$fail(peg$c60); }
+            }
+            if (s1 !== peg$FAILED) {
+              peg$reportedPos = s0;
+              s1 = peg$c61();
+            }
+            s0 = s1;
+            if (s0 === peg$FAILED) {
+              s0 = peg$currPos;
+              if (input.substr(peg$currPos, 2) === peg$c62) {
+                s1 = peg$c62;
+                peg$currPos += 2;
+              } else {
+                s1 = peg$FAILED;
+                if (peg$silentFails === 0) { peg$fail(peg$c63); }
+              }
+              if (s1 !== peg$FAILED) {
+                peg$reportedPos = s0;
+                s1 = peg$c64();
+              }
+              s0 = s1;
+              if (s0 === peg$FAILED) {
+                s0 = peg$currPos;
+                if (input.substr(peg$currPos, 2) === peg$c65) {
+                  s1 = peg$c65;
+                  peg$currPos += 2;
+                } else {
+                  s1 = peg$FAILED;
+                  if (peg$silentFails === 0) { peg$fail(peg$c66); }
+                }
+                if (s1 !== peg$FAILED) {
+                  s2 = peg$currPos;
+                  s3 = peg$currPos;
+                  s4 = peg$parsehexDigit();
+                  if (s4 !== peg$FAILED) {
+                    s5 = peg$parsehexDigit();
+                    if (s5 !== peg$FAILED) {
+                      s6 = peg$parsehexDigit();
+                      if (s6 !== peg$FAILED) {
+                        s7 = peg$parsehexDigit();
+                        if (s7 !== peg$FAILED) {
+                          s4 = [s4, s5, s6, s7];
+                          s3 = s4;
+                        } else {
+                          peg$currPos = s3;
+                          s3 = peg$c2;
+                        }
+                      } else {
+                        peg$currPos = s3;
+                        s3 = peg$c2;
+                      }
+                    } else {
+                      peg$currPos = s3;
+                      s3 = peg$c2;
+                    }
+                  } else {
+                    peg$currPos = s3;
+                    s3 = peg$c2;
+                  }
+                  if (s3 !== peg$FAILED) {
+                    s3 = input.substring(s2, peg$currPos);
+                  }
+                  s2 = s3;
+                  if (s2 !== peg$FAILED) {
+                    peg$reportedPos = s0;
+                    s1 = peg$c67(s2);
+                    s0 = s1;
+                  } else {
+                    peg$currPos = s0;
+                    s0 = peg$c2;
+                  }
+                } else {
+                  peg$currPos = s0;
+                  s0 = peg$c2;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      return s0;
+    }
+
+    function peg$parsechars() {
+      var s0, s1, s2;
+
+      s0 = peg$currPos;
+      s1 = [];
+      s2 = peg$parsechar();
+      if (s2 !== peg$FAILED) {
+        while (s2 !== peg$FAILED) {
+          s1.push(s2);
+          s2 = peg$parsechar();
+        }
+      } else {
+        s1 = peg$c2;
+      }
+      if (s1 !== peg$FAILED) {
+        peg$reportedPos = s0;
+        s1 = peg$c68(s1);
+      }
+      s0 = s1;
+
+      return s0;
+    }
+
+    peg$result = peg$startRuleFunction();
+
+    if (peg$result !== peg$FAILED && peg$currPos === input.length) {
+      return peg$result;
+    } else {
+      if (peg$result !== peg$FAILED && peg$currPos < input.length) {
+        peg$fail({ type: "end", description: "end of input" });
+      }
+
+      throw peg$buildException(null, peg$maxFailExpected, peg$maxFailPos);
+    }
+  }
+
+  return {
+    SyntaxError: SyntaxError,
+    parse:       parse
+  };
+})();
+
+
+},{}],21:[function(require,module,exports){
 //! moment.js
 //! version : 2.13.0
 //! authors : Tim Wood, Iskren Chernev, Moment.js contributors
@@ -4234,7 +6694,7 @@ module.exports = function emptyElement (element) {
     return _moment;
 
 }));
-},{}],6:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 (function (process){
   /* globals require, module */
 
@@ -4860,7 +7320,7 @@ module.exports = function emptyElement (element) {
   page.sameOrigin = sameOrigin;
 
 }).call(this,require('_process'))
-},{"_process":2,"path-to-regexp":7}],7:[function(require,module,exports){
+},{"_process":2,"path-to-regexp":23}],23:[function(require,module,exports){
 var isarray = require('isarray')
 
 /**
@@ -5252,12 +7712,12 @@ function pathToRegexp (path, keys, options) {
   return stringToRegexp(path, keys, options)
 }
 
-},{"isarray":8}],8:[function(require,module,exports){
+},{"isarray":24}],24:[function(require,module,exports){
 module.exports = Array.isArray || function (arr) {
   return Object.prototype.toString.call(arr) == '[object Array]';
 };
 
-},{}],9:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 
 var orig = document.title;
 
@@ -5280,7 +7740,7 @@ exports.reset = function(){
   set(orig);
 };
 
-},{}],10:[function(require,module,exports){
+},{}],26:[function(require,module,exports){
 var bel = require('bel') // turns template tag into DOM elements
 var morphdom = require('morphdom') // efficiently diffs + morphs two DOM elements
 var defaultEvents = require('./update-events.js') // default events to be copied when dom elements update
@@ -5316,7 +7776,7 @@ module.exports.update = function (fromNode, toNode, opts) {
   }
 }
 
-},{"./update-events.js":16,"bel":11,"morphdom":15}],11:[function(require,module,exports){
+},{"./update-events.js":32,"bel":27,"morphdom":31}],27:[function(require,module,exports){
 var document = require('global/document')
 var hyperx = require('hyperx')
 
@@ -5437,7 +7897,7 @@ function belCreateElement (tag, props, children) {
 module.exports = hyperx(belCreateElement)
 module.exports.createElement = belCreateElement
 
-},{"global/document":12,"hyperx":13}],12:[function(require,module,exports){
+},{"global/document":28,"hyperx":29}],28:[function(require,module,exports){
 (function (global){
 var topLevel = typeof global !== 'undefined' ? global :
     typeof window !== 'undefined' ? window : {}
@@ -5456,7 +7916,7 @@ if (typeof document !== 'undefined') {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"min-document":1}],13:[function(require,module,exports){
+},{"min-document":1}],29:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -5721,7 +8181,7 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":14}],14:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":30}],30:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -5742,7 +8202,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],15:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 // Create a range object for efficently rendering strings to elements.
 var range;
 
@@ -6312,7 +8772,7 @@ function morphdom(fromNode, toNode, options) {
 
 module.exports = morphdom;
 
-},{}],16:[function(require,module,exports){
+},{}],32:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -6350,7 +8810,7 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],17:[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -6382,7 +8842,7 @@ page('/', function (ctx, next) {
   empty(main).appendChild(template(pictures));
 });
 
-},{"./template":18,"empty-element":3,"page":6,"title":9}],18:[function(require,module,exports){
+},{"./template":34,"empty-element":3,"page":22,"title":25}],34:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var layout = require('../layout');
 var pictureCard = require('../picture-card');
@@ -6401,12 +8861,8 @@ module.exports = function (pictures) {
   return layout(element);
 };
 
-},{"../layout":21,"../picture-card":22,"yo-yo":10}],19:[function(require,module,exports){
+},{"../layout":37,"../picture-card":38,"yo-yo":26}],35:[function(require,module,exports){
 var page = require('page');
-var moment = require('moment');
-
-require('moment/locale/es');
-moment.locale('es');
 
 require('./homepage');
 require('./signup');
@@ -6414,7 +8870,7 @@ require('./signin');
 
 page();
 
-},{"./homepage":17,"./signin":23,"./signup":25,"moment":5,"moment/locale/es":4,"page":6}],20:[function(require,module,exports){
+},{"./homepage":33,"./signin":39,"./signup":41,"page":22}],36:[function(require,module,exports){
 var yoyo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -6432,7 +8888,7 @@ module.exports = function landing(box) {
   </div>`;
 };
 
-},{"yo-yo":10}],21:[function(require,module,exports){
+},{"yo-yo":26}],37:[function(require,module,exports){
 var yoyo = require('yo-yo');
 
 module.exports = function layout(content) {
@@ -6462,9 +8918,15 @@ module.exports = function layout(content) {
   </div>`;
 };
 
-},{"yo-yo":10}],22:[function(require,module,exports){
+},{"yo-yo":26}],38:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var moment = require('moment');
+var IntlRelativeFormat = window.IntlRelativeFormat = require('intl-relativeformat');
+
+require('intl-relativeformat/dist/locale-data/en.js');
+require('intl-relativeformat/dist/locale-data/es.js');
+
+var rf = new IntlRelativeFormat('es');
 
 module.exports = function pictureCard(picture) {
   var element;
@@ -6479,7 +8941,7 @@ module.exports = function pictureCard(picture) {
           <img src="${ renderPicture.user.avatar }" class="avatar"/>
           <span class="username">${ renderPicture.user.username }</span>
         </a>
-        <small class="right time">${ moment(renderPicture.createdAt).fromNow() }</small>
+        <small class="right time">${ rf.format(renderPicture.createdAt) }</small>
         <p>
           <a class="left" href="#" onclick=${ like.bind(null, true) }><i class="fa fa-heart-o" aria-hidden="true"></i></a>
           <a class="left" href="#" onclick=${ like.bind(null, false) }><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -6503,7 +8965,7 @@ module.exports = function pictureCard(picture) {
   return element;
 };
 
-},{"moment":5,"yo-yo":10}],23:[function(require,module,exports){
+},{"intl-relativeformat":6,"intl-relativeformat/dist/locale-data/en.js":4,"intl-relativeformat/dist/locale-data/es.js":5,"moment":21,"yo-yo":26}],39:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -6515,7 +8977,7 @@ page('/signin', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":24,"empty-element":3,"page":6,"title":9}],24:[function(require,module,exports){
+},{"./template":40,"empty-element":3,"page":22,"title":25}],40:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 
@@ -6546,7 +9008,7 @@ var signinForm = yoyo`<div class="col s12 m7">
 
 module.exports = landing(signinForm);
 
-},{"../landing":20,"yo-yo":10}],25:[function(require,module,exports){
+},{"../landing":36,"yo-yo":26}],41:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -6558,7 +9020,7 @@ page('/signup', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":26,"empty-element":3,"page":6,"title":9}],26:[function(require,module,exports){
+},{"./template":42,"empty-element":3,"page":22,"title":25}],42:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 
@@ -6592,4 +9054,4 @@ var signupForm = yoyo`<div class="col s12 m7">
 
 module.exports = landing(signupForm);
 
-},{"../landing":20,"yo-yo":10}]},{},[19]);
+},{"../landing":36,"yo-yo":26}]},{},[35]);
