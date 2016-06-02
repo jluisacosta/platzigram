@@ -1,4 +1,4 @@
-var LOCALE = 'es';
+var LOCALE = 'en-US';
 var MESSAGES = { 'en-US': require('./en-US'), es: require('./es')  };
 var IntlRelativeFormat;
 var IntlMessageFormat;
