@@ -6,6 +6,8 @@ module.exports = {
   'spanish': 'Español',
 
   //HOMEPAGE
+    'upload.text': 'Subir foto',
+    'upload.btn-text': 'Subir',
 
     //Picture Card
     'likes': '{ likes, number } me gusta',
