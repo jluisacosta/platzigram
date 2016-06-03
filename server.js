@@ -17,6 +17,35 @@ app.get('/signin', function (request, response) {
   response.render('index', { title: 'Platzigram - Signin' });
 });
 
+app.get('/api/pictures', function (request, response) {
+  var pictures = [
+    {
+      user: {
+        username: 'jluisacosta',
+        avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+      },
+      url: 'http://materializecss.com/images/office.jpg',
+      likes: 0,
+      liked: false,
+      createdAt: new Date().getTime()
+    },
+    {
+      user: {
+        username: 'jluisacosta',
+        avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+      },
+      url: 'http://materializecss.com/images/office.jpg',
+      likes: 2,
+      liked: true,
+      createdAt: new Date().setDate(new Date().getDate()-10)
+    }
+  ];
+
+  setTimeout(function () {
+    response.send(pictures);
+  },2000);
+})
+
 app.listen(3000, function (error) {
   if(error) {
     return console.log('An error ocurred!'), process.exit(1);
