@@ -3,8 +3,9 @@ var empty = require('empty-element');
 var template = require('./template');
 var title = require('title');
 var request = require('superagent');
+var header = require('../header');
 
-page('/', loadPictures, function (ctx, next) {
+page('/', header, loadPictures, function (ctx, next) {
   var main = document.getElementById('main-container');
 
   title('Platzigram');

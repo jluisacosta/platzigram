@@ -10199,14 +10199,47 @@ function changeLanguage(locale) {
 
 document.body.appendChild(element);
 
-},{"../translate":64,"yo-yo":44}],52:[function(require,module,exports){
+},{"../translate":65,"yo-yo":44}],52:[function(require,module,exports){
+var yoyo = require('yo-yo');
+var translate = require('../translate');
+var empty = require('empty-element');
+
+var element = yoyo`<nav class="header">
+  <div class="nav-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m1">
+          <a href="/" class="brand-logo platzigram">Platzigram</a>
+        </div>
+        <div class="col s2 m6 push-s10 push-m10">
+          <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+          <ul id="drop-user" class="dropdown-content">
+            <li><a href="#">${ translate.message('logout') }</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>`;
+
+module.exports = function header(ctx, next) {
+  var container = document.getElementById('header-container');
+
+  empty(container).appendChild(element);
+  next();
+};
+
+},{"../translate":65,"empty-element":3,"yo-yo":44}],53:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
 var title = require('title');
 var request = require('superagent');
+var header = require('../header');
 
-page('/', loadPictures, function (ctx, next) {
+page('/', header, loadPictures, function (ctx, next) {
   var main = document.getElementById('main-container');
 
   title('Platzigram');
@@ -10224,7 +10257,7 @@ function loadPictures(ctx, next) {
   });
 }
 
-},{"./template":53,"empty-element":3,"page":34,"superagent":37,"title":43}],53:[function(require,module,exports){
+},{"../header":52,"./template":54,"empty-element":3,"page":34,"superagent":37,"title":43}],54:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var layout = require('../layout');
 var pictureCard = require('../picture-card');
@@ -10243,9 +10276,10 @@ module.exports = function (pictures) {
   return layout(element);
 };
 
-},{"../layout":56,"../picture-card":57,"yo-yo":44}],54:[function(require,module,exports){
+},{"../layout":57,"../picture-card":58,"yo-yo":44}],55:[function(require,module,exports){
 var page = require('page');
 
+require('./header');
 require('./homepage');
 require('./signup');
 require('./signin');
@@ -10253,7 +10287,7 @@ require('./footer');
 
 page();
 
-},{"./footer":51,"./homepage":52,"./signin":58,"./signup":60,"page":34}],55:[function(require,module,exports){
+},{"./footer":51,"./header":52,"./homepage":53,"./signin":59,"./signup":61,"page":34}],56:[function(require,module,exports){
 var yoyo = require('yo-yo');
 
 module.exports = function landing(box) {
@@ -10271,38 +10305,18 @@ module.exports = function landing(box) {
   </div>`;
 };
 
-},{"yo-yo":44}],56:[function(require,module,exports){
+},{"yo-yo":44}],57:[function(require,module,exports){
 var yoyo = require('yo-yo');
-var translate = require('../translate');
 
 module.exports = function layout(content) {
   return yoyo`<div>
-    <nav class="header">
-      <div class="nav-wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6 offset-m1">
-              <a href="/" class="brand-logo platzigram">Platzigram</a>
-            </div>
-            <div class="col s2 m6 push-s10 push-m10">
-              <a href="#" class="btn btn-large btn-flat dropdown-button" data-activates="drop-user">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <ul id="drop-user" class="dropdown-content">
-                <li><a href="#">${ translate.message('logout') }</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
     <div class="content">
       ${ content }
     </div>
   </div>`;
 };
 
-},{"../translate":64,"yo-yo":44}],57:[function(require,module,exports){
+},{"yo-yo":44}],58:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var translate = require('../translate');
 
@@ -10343,7 +10357,7 @@ module.exports = function pictureCard(picture) {
   return element;
 };
 
-},{"../translate":64,"yo-yo":44}],58:[function(require,module,exports){
+},{"../translate":65,"yo-yo":44}],59:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -10355,7 +10369,7 @@ page('/signin', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":59,"empty-element":3,"page":34,"title":43}],59:[function(require,module,exports){
+},{"./template":60,"empty-element":3,"page":34,"title":43}],60:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 var translate = require('../translate');
@@ -10387,7 +10401,7 @@ var signinForm = yoyo`<div class="col s12 m7">
 
 module.exports = landing(signinForm);
 
-},{"../landing":55,"../translate":64,"yo-yo":44}],60:[function(require,module,exports){
+},{"../landing":56,"../translate":65,"yo-yo":44}],61:[function(require,module,exports){
 var page = require('page');
 var empty = require('empty-element');
 var template = require('./template');
@@ -10399,7 +10413,7 @@ page('/signup', function (ctx, next) {
   empty(main).appendChild(template);
 });
 
-},{"./template":61,"empty-element":3,"page":34,"title":43}],61:[function(require,module,exports){
+},{"./template":62,"empty-element":3,"page":34,"title":43}],62:[function(require,module,exports){
 var yoyo = require('yo-yo');
 var landing = require('../landing');
 var translate = require('../translate');
@@ -10434,7 +10448,7 @@ var signupForm = yoyo`<div class="col s12 m7">
 
 module.exports = landing(signupForm);
 
-},{"../landing":55,"../translate":64,"yo-yo":44}],62:[function(require,module,exports){
+},{"../landing":56,"../translate":65,"yo-yo":44}],63:[function(require,module,exports){
 module.exports = {
   //LAYOUT
   'logout': 'Logout',
@@ -10467,7 +10481,7 @@ module.exports = {
   'signin.not-have-account': '¿Don\'t have an account?'
 };
 
-},{}],63:[function(require,module,exports){
+},{}],64:[function(require,module,exports){
 module.exports = {
   //LAYOUT
   'logout': 'Salir',
@@ -10500,7 +10514,7 @@ module.exports = {
   'signin.not-have-account': '¿No tienes una cuenta?'
 };
 
-},{}],64:[function(require,module,exports){
+},{}],65:[function(require,module,exports){
 var MESSAGES = { 'en-US': require('./en-US'), es: require('./es') };
 var IntlRelativeFormat;
 var IntlMessageFormat;
@@ -10529,4 +10543,4 @@ module.exports = {
   date: new IntlRelativeFormat(locale)
 };
 
-},{"./en-US":62,"./es":63,"intl":30,"intl-messageformat":4,"intl-relativeformat":15,"intl-relativeformat/dist/locale-data/en.js":13,"intl-relativeformat/dist/locale-data/es.js":14,"intl/locale-data/jsonp/en-US.js":32,"intl/locale-data/jsonp/es.js":33}]},{},[54]);
+},{"./en-US":63,"./es":64,"intl":30,"intl-messageformat":4,"intl-relativeformat":15,"intl-relativeformat/dist/locale-data/en.js":13,"intl-relativeformat/dist/locale-data/es.js":14,"intl/locale-data/jsonp/en-US.js":32,"intl/locale-data/jsonp/es.js":33}]},{},[55]);
