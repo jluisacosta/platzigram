@@ -6312,3 +6312,12 @@ body {
     cursor: pointer;
     opacity: 0;
     filter: alpha(opacity=0); }
+
+.userpage {
+  padding-top: 40px; }
+  .userpage .user-avatar {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%; }
+  .userpage .user-username {
+    font-size: 34px; }

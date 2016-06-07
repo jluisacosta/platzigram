@@ -54,7 +54,7 @@ app.get('/api/pictures', function (request, response) {
 
   setTimeout(function () {
     response.send(pictures);
-  },2000);
+  },0);
 })
 
 app.post('/api/pictures', function (request, response) {
@@ -65,6 +65,23 @@ app.post('/api/pictures', function (request, response) {
 
     response.send('File uploaded');
   });
+});
+
+
+app.get('/api/u/:username', function (request, response) {
+  var user = [
+    {
+      username: 'jluisacosta',
+      avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+    }
+  ];
+
+  response.send(user);
+});
+
+app.get('/:username', function (request, response) {
+  var username = request.params.username;
+  response.render('index', { title: 'Platzigram - (@'+username+')' });
 });
 
 app.listen(3000, function (error) {
