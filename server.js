@@ -69,12 +69,37 @@ app.post('/api/pictures', function (request, response) {
 
 
 app.get('/api/u/:username', function (request, response) {
-  var user = [
-    {
-      username: 'jluisacosta',
-      avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
-    }
-  ];
+  var user = {
+    username: 'jluisacosta',
+    avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460',
+    pictures: [
+      {
+        id:1,
+        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        likes:3
+      },
+      {
+        id:2,
+        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        likes:15
+      },
+      {
+        id:3,
+        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        likes:7
+      },
+      {
+        id:4,
+        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        likes:2
+      },
+      {
+        id:5,
+        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        likes:100
+      }
+    ]
+  };
 
   response.send(user);
 });
