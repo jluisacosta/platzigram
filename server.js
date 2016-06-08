@@ -54,7 +54,7 @@ app.get('/api/pictures', function (request, response) {
 
   setTimeout(function () {
     response.send(pictures);
-  },0);
+  },2000);
 })
 
 app.post('/api/pictures', function (request, response) {
