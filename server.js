@@ -75,27 +75,27 @@ app.get('/api/u/:username', function (request, response) {
     pictures: [
       {
         id:1,
-        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        src:'http://www.codeinstitute.net/wp-content/uploads/2015/04/students-and-laptops-500x500.jpg',
         likes:3
       },
       {
         id:2,
-        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
-        likes:15
+        src:'http://beachcoders.com/wp-content/uploads/2013/12/bootcamp_history-90187a42aab5ea7120cb0645774b8f4a-400x400.jpg',
+        likes:0
       },
       {
         id:3,
-        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
-        likes:7
+        src:'http://i.imgur.com/1zG5MEI.png?1',
+        likes:1
       },
       {
         id:4,
-        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        src:'http://www.uscmed.com/wp-content/uploads/2013/06/medical-coding.jpeg',
         likes:2
       },
       {
         id:5,
-        src:'https://i.kinja-img.com/gawker-media/image/upload/s--10phndTX--/192kp7ido19nrjpg.jpg',
+        src:'https://wallsheaven.com/photos/E85222367/400/coding-and-programming-flat-illustration.jpg',
         likes:100
       }
     ]
@@ -106,6 +106,7 @@ app.get('/api/u/:username', function (request, response) {
 
 app.get('/:username', function (request, response) {
   var username = request.params.username;
+
   response.render('index', { title: 'Platzigram - (@'+username+')' });
 });
 
