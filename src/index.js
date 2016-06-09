@@ -3,9 +3,9 @@ var page = require('page');
 
 require('./header');
 require('./homepage');
-require('./userpage');
 require('./signup');
 require('./signin');
+require('./userpage');
 require('./footer');
 
 page();

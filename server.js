@@ -1,4 +1,9 @@
+/* Application variables */
 var express = require('express');
+var app = express();
+
+
+/* Storage */
 var multer = require('multer');
 var ext = require('file-extension');
 var storage = multer.diskStorage({
@@ -10,12 +15,15 @@ var storage = multer.diskStorage({
   }
 });
 var upload = multer({ storage: storage }).single('picture');
-var app = express();
 
+
+/* App initialization */
 app.set('view engine','pug');
 
 app.use(express.static('public'));
 
+
+/* Request routes */
 app.get('/', function (request, response) {
   response.render('index', { title: 'Platzigram' });
 });
@@ -28,6 +36,18 @@ app.get('/signin', function (request, response) {
   response.render('index', { title: 'Platzigram - Signin' });
 });
 
+app.get('/:username', function (request, response) {
+  var username = request.params.username;
+
+  response.render('index', { title: 'Platzigram' });
+});
+
+app.get('/:username/picture/:id', function (request, response) {
+  response.render('index', { title: 'Platzigram' });
+});
+
+
+/* API Simulation */
 app.get('/api/pictures', function (request, response) {
   var pictures = [
     {
@@ -67,7 +87,6 @@ app.post('/api/pictures', function (request, response) {
   });
 });
 
-
 app.get('/api/u/:username', function (request, response) {
   var user = {
     username: 'jluisacosta',
@@ -104,12 +123,8 @@ app.get('/api/u/:username', function (request, response) {
   response.send(user);
 });
 
-app.get('/:username', function (request, response) {
-  var username = request.params.username;
 
-  response.render('index', { title: 'Platzigram - (@'+username+')' });
-});
-
+/* Server run */
 app.listen(3000, function (error) {
   if(error) {
     return console.log('An error ocurred!'), process.exit(1);

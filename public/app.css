@@ -6313,13 +6313,13 @@ body {
     opacity: 0;
     filter: alpha(opacity=0); }
 
-.userpage {
+#userpage {
   padding-top: 40px; }
-  .userpage .user-avatar {
+  #userpage .user-avatar {
     max-width: 150px;
     max-height: 150px;
     border-radius: 50%; }
-  .userpage .user-username {
+  #userpage .user-username {
     font-size: 34px; }
 
 .thumbnail-container {
