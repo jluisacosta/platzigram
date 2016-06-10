@@ -8,6 +8,12 @@ body {
   font-family: Montserrat;
 }
 
+@media #{$large-and-up}{
+  nav.header {
+    padding: 0 15%;
+  }
+}
+
 .iphone {
   max-width: 100%;
 }
@@ -208,6 +214,24 @@ $avatar-size: 48px;
   &:hover &-mask{
     display: block;
   }
+}
+
+.btn-x-container {
+  position: relative;
+}
+
+#btn-x {
+  position:absolute;
+  top:115px;
+  right:20px;
+  font-size: 25px;
+  color: white;
+}
+
+#picture-modal {
+  max-height: 60%;
+  width:75%;
+  height: 100%;
 }
 
 /* Spinner Loader */

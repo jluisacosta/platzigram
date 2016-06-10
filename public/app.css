@@ -6208,6 +6208,10 @@ body {
   color: #125688;
   font-family: Montserrat; }
 
+@media only screen and (min-width: 993px) {
+  nav.header {
+    padding: 0 15%; } }
+
 .iphone {
   max-width: 100%; }
 
@@ -6357,6 +6361,21 @@ body {
       color: white; }
   .Thumbnail:hover .Thumbnail-mask {
     display: block; }
+
+.btn-x-container {
+  position: relative; }
+
+#btn-x {
+  position: absolute;
+  top: 115px;
+  right: 20px;
+  font-size: 25px;
+  color: white; }
+
+#picture-modal {
+  max-height: 60%;
+  width: 75%;
+  height: 100%; }
 
 /* Spinner Loader */
 .loader {
