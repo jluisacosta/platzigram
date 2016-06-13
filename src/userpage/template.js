@@ -32,12 +32,7 @@ module.exports = function (userData) {
           }) }
     </div>
 
-    <div id="picture-modal" class="modal">
-      <div class="modal-content">
-        <h4>Modal Header</h4>
-        <p>A bunch of text</p>
-      </div>
-    </div>
+    <div id="modal-container"></div>
 
   </div>`;
 

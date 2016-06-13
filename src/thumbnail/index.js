@@ -5,7 +5,7 @@ module.exports = function thumbnail(username, picture) {
   return yoyo
 
   `<div class="col s12 m6 l4 center-align thumbnail-container">
-    <a href="/${username}/picture/${picture.id}">
+    <a href="/${username}/pictures/${picture.id}">
       <div class="Thumbnail">
         <img class="Thumbnail-image" src="${picture.src}"/>
         <div class="Thumbnail-mask">

@@ -42,7 +42,7 @@ app.get('/:username', function (request, response) {
   response.render('index', { title: 'Platzigram' });
 });
 
-app.get('/:username/picture/:id', function (request, response) {
+app.get('/:username/pictures/:id', function (request, response) {
   response.render('index', { title: 'Platzigram' });
 });
 
@@ -123,6 +123,54 @@ app.get('/api/u/:username', function (request, response) {
   response.send(user);
 });
 
+app.get('/api/u/:username/p/:id', function (request, response) {
+  var user = {
+    username: 'jluisacosta',
+    avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460',
+    pictures: [
+      {
+        id:1,
+        src:'http://www.codeinstitute.net/wp-content/uploads/2015/04/students-and-laptops-500x500.jpg',
+        likes:3
+      },
+      {
+        id:2,
+        src:'http://beachcoders.com/wp-content/uploads/2013/12/bootcamp_history-90187a42aab5ea7120cb0645774b8f4a-400x400.jpg',
+        likes:0
+      },
+      {
+        id:3,
+        src:'http://i.imgur.com/1zG5MEI.png?1',
+        likes:1
+      },
+      {
+        id:4,
+        src:'http://www.uscmed.com/wp-content/uploads/2013/06/medical-coding.jpeg',
+        likes:2
+      },
+      {
+        id:5,
+        src:'https://wallsheaven.com/photos/E85222367/400/coding-and-programming-flat-illustration.jpg',
+        likes:100
+      }
+    ]
+  };
+
+  var photo = user.pictures.find(function (photo) {
+    return photo.id == request.params.id;
+  });
+
+  var photoData = {
+    id: photo.id,
+    username: user.username,
+    avatar: user.avatar,
+    src: photo.src,
+    likes: photo.likes
+  };
+
+  response.send(photoData);
+
+});
 
 /* Server run */
 app.listen(3000, function (error) {
