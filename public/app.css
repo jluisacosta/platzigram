@@ -6388,7 +6388,31 @@ body {
   color: white; }
 
 #picture-modal {
-  max-width: 75%; }
+  max-width: 70%;
+  max-height: 100%;
+  width: 70%;
+  font-family: Montserrat; }
+  #picture-modal .modal-content {
+    padding: 0;
+    display: flex; }
+    #picture-modal .modal-content div:first-child {
+      max-width: 60%;
+      width: auto; }
+    #picture-modal .modal-content div:nth-child(2) {
+      padding: 20px;
+      min-width: 40%;
+      flex-grow: 1; }
+      #picture-modal .modal-content div:nth-child(2) img {
+        width: 40px;
+        height: 40px; }
+      #picture-modal .modal-content div:nth-child(2) p {
+        display: inline-block;
+        vertical-align: top;
+        margin: 10px; }
+        #picture-modal .modal-content div:nth-child(2) p a {
+          color: black; }
+      #picture-modal .modal-content div:nth-child(2) hr {
+        border-color: #fafafa; }
 
 /* Spinner Loader */
 .loader {

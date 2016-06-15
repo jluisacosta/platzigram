@@ -255,7 +255,45 @@ $avatar-size: 48px;
 }
 
 #picture-modal {
-  max-width:75%;
+  max-width:70%;
+  max-height:100%;
+  width:70%;
+  font-family: Montserrat;
+
+  .modal-content{
+    padding:0;
+    display: flex;
+
+    div:first-child {
+      max-width: 60%;
+      width: auto;
+    }
+
+    div:nth-child(2) {
+      padding:20px;
+      min-width: 40%;
+      flex-grow: 1;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+
+      p {
+        display: inline-block;
+        vertical-align: top;
+        margin:10px;
+
+        a {
+          color: black;
+        }
+      }
+
+      hr {
+        border-color: #fafafa;
+      }
+    }
+  }
 }
 
 /* Spinner Loader */
