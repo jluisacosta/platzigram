@@ -153,7 +153,11 @@ $avatar-size: 48px;
 }
 
 #userpage {
-  padding-top: 40px;
+  padding-top: 60px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300 !important;
+  color: black;
+
 
   .user-avatar {
     max-width: 150px;
@@ -162,7 +166,29 @@ $avatar-size: 48px;
   }
 
   .user-username {
+    margin-top: 0;
+    font-weight: 300 !important;
     font-size: 34px;
+  }
+
+  .minibio {
+    font-size: 17px;
+  }
+}
+
+@media #{$medium-and-up}{
+  #userpage {
+    .row:first-child{
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media #{$small-and-down} {
+  #userpage {
+    .user-username{
+      margin-top:20px;
+    }
   }
 }
 
@@ -171,6 +197,7 @@ $avatar-size: 48px;
 }
 
 .Thumbnail {
+  font-family: Montserrat;
   position: relative;
   width: 100%;
 
@@ -205,8 +232,7 @@ $avatar-size: 48px;
     align-items: center;
 
     p {
-      font-family: sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: white;
     }
   }

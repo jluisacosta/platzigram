@@ -6318,18 +6318,34 @@ body {
     filter: alpha(opacity=0); }
 
 #userpage {
-  padding-top: 40px; }
+  padding-top: 60px;
+  font-family: Roboto, sans-serif;
+  font-weight: 300 !important;
+  color: black; }
   #userpage .user-avatar {
     max-width: 150px;
     max-height: 150px;
     border-radius: 50%; }
   #userpage .user-username {
+    margin-top: 0;
+    font-weight: 300 !important;
     font-size: 34px; }
+  #userpage .minibio {
+    font-size: 17px; }
+
+@media only screen and (min-width: 601px) {
+  #userpage .row:first-child {
+    margin-bottom: 60px; } }
+
+@media only screen and (max-width: 600px) {
+  #userpage .user-username {
+    margin-top: 20px; } }
 
 .thumbnail-container {
   margin-bottom: 1.5rem; }
 
 .Thumbnail {
+  font-family: Montserrat;
   position: relative;
   width: 100%; }
   .Thumbnail-image {
@@ -6356,8 +6372,7 @@ body {
     justify-content: center;
     align-items: center; }
     .Thumbnail-text p {
-      font-family: sans-serif;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       color: white; }
   .Thumbnail:hover .Thumbnail-mask {
     display: block; }
@@ -6373,9 +6388,7 @@ body {
   color: white; }
 
 #picture-modal {
-  max-height: 60%;
-  width: 75%;
-  height: 100%; }
+  max-width: 75%; }
 
 /* Spinner Loader */
 .loader {

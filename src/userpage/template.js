@@ -7,23 +7,14 @@ module.exports = function (userData) {
 
   `<div class="container" id="userpage">
     <div class="row">
-      <div class="col s12 m10 offset-m1 l8 offset-l2">
-        <div class="row hide-on-small-only">
-          <div class="col s12 m6 l6 right-align">
-            <img class="user-avatar" src="${userData.avatar}"/>
-          </div>
-          <div class="col s12 m6 l6 left-align">
-            <p class="user-username">${userData.username}</p>
-          </div>
-        </div>
-        <div class="row hide-on-med-and-up">
-          <div class="col s12 m6 l6 center-align">
-            <img class="user-avatar" src="${userData.avatar}"/>
-          </div>
-          <div class="col s12 m6 l6 center-align">
-            <p class="user-username">${userData.username}</p>
-          </div>
-        </div>
+      <div class="col s12 m4 l4 center-align">
+        <img class="user-avatar" src="${userData.avatar}"/>
+      </div>
+      <div class="col s12 m8 l8">
+        <h1 class="user-username left-align hide-on-small-only">${userData.username}</h1>
+        <h1 class="user-username center-align hide-on-med-and-up">${userData.username}</h1>
+        <p class="minibio">Enthusiast Web Developer who loves to learn new technologies to create the future of internet. Passionate of coding, soccer and tasting a good beer.</p>
+        <p><strong>${userData.pictures.length}</strong> posts</p>
       </div>
     </div>
     <div class="row">
