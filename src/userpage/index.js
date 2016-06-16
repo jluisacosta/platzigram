@@ -27,7 +27,7 @@ function loadUserPage(userData) {
 
 function triggerModal(photoData) {
   var modalContainer = document.getElementById('modal-container');
-  modalContainer.appendChild(modal(photoData));
+  empty(modalContainer).appendChild(modal(photoData));
 
   $('#picture-modal').openModal();
 

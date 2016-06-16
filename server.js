@@ -116,6 +116,21 @@ app.get('/api/u/:username', function (request, response) {
         id:5,
         src:'https://wallsheaven.com/photos/E85222367/400/coding-and-programming-flat-illustration.jpg',
         likes:100
+      },
+      {
+        id:6,
+        src:'http://www.cta.tech/CorporateSite/media/blog/images/2015/coding1.jpg',
+        likes:21
+      },
+      {
+        id:7,
+        src:'https://pbs.twimg.com/media/ChI9VeUWMAEjFb8.jpg',
+        likes:7
+      },
+      {
+        id:8,
+        src:'https://yt3.ggpht.com/-shUq8gV-uh4/AAAAAAAAAAI/AAAAAAAAAAA/x6vLYh8lQMs/s900-c-k-no-rj-c0xffffff/photo.jpg',
+        likes:27
       }
     ]
   };
@@ -152,6 +167,21 @@ app.get('/api/u/:username/p/:id', function (request, response) {
         id:5,
         src:'https://wallsheaven.com/photos/E85222367/400/coding-and-programming-flat-illustration.jpg',
         likes:100
+      },
+      {
+        id:6,
+        src:'http://www.cta.tech/CorporateSite/media/blog/images/2015/coding1.jpg',
+        likes:21
+      },
+      {
+        id:7,
+        src:'https://pbs.twimg.com/media/ChI9VeUWMAEjFb8.jpg',
+        likes:7
+      },
+      {
+        id:8,
+        src:'https://yt3.ggpht.com/-shUq8gV-uh4/AAAAAAAAAAI/AAAAAAAAAAA/x6vLYh8lQMs/s900-c-k-no-rj-c0xffffff/photo.jpg',
+        likes:27
       }
     ]
   };
