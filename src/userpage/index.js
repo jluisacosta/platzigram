@@ -23,6 +23,43 @@ function loadUserPage(userData) {
 
   title(`Platzigram - (@${userData.username})`);
   empty(main).appendChild(template(userData));
+  putImagesInSquareFrame();
+  window.onresize = putImagesInSquareFrame;
+}
+
+function putImagesInSquareFrame() {
+  var $images = $('.Thumbnail-image');
+
+  $images.each( function() {
+    var $image = $(this);
+
+    if(!this.complete){
+      $image.on('load', function(event) {
+        squareThumbnail($image);
+      });
+    }
+    else {
+      squareThumbnail($image);
+    }
+  });
+}
+
+function squareThumbnail($image) {
+  var $imageParent = $image.parent();
+  var parentWidth = $imageParent.width();
+
+  $imageParent.height(parentWidth);
+
+  if($image.width() >= $image.height()) {
+    $image.height(parentWidth);
+    $image.css('top', 0);
+    $image.css('left', -(($image.width()-parentWidth)/2));
+  }
+  else  {
+    $image.width(parentWidth);
+    $image.css('left', 0);
+    $image.css('top', -(($image.height()-parentWidth)/2));
+  }
 }
 
 function triggerModal(photoData) {

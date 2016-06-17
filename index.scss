@@ -200,9 +200,12 @@ $avatar-size: 48px;
   font-family: Montserrat;
   position: relative;
   width: 100%;
+  overflow: hidden;
 
   &-image {
-    width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
   }
 
   &-mask {
