@@ -64,12 +64,22 @@ function squareThumbnail($image) {
 
 function triggerModal(photoData) {
   var modalContainer = document.getElementById('modal-container');
-  empty(modalContainer).appendChild(modal(photoData));
+  var $overlay, closeBtn;
 
+  empty(modalContainer).appendChild(modal(photoData));
   $('#picture-modal').openModal();
 
-  var $overlay = $('.lean-overlay');
-  var closeBtn = '<div class="btn-x-container"><i class="fa fa-times" id="btn-x" aria-hidden="true"></i></div>';
+  $('#modal-img').on('load', function(event) {
+    var $img = $(this);
+
+    if($img.height() > $img.width()) {
+      $img.height($('#picture-modal').height());
+    }
+
+  });
+
+  $overlay = $('.lean-overlay');
+  closeBtn = '<div class="btn-x-container"><i class="fa fa-times" id="btn-x" aria-hidden="true"></i></div>';
 
   $overlay.html(closeBtn);
   $overlay.click(function(event) {

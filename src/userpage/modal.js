@@ -7,7 +7,7 @@ module.exports = function (photoData) {
   `<div id="picture-modal" class="modal">
     <div class="modal-content">
       <div>
-        <img class="responsive-img" src="${photoData.src}"/>
+        <img class="responsive-img" id="modal-img" src="${photoData.src}"/>
       </div>
       <div>
         <img class="circle responsive-img" src="${photoData.avatar}"/>
