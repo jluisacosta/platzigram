@@ -29,36 +29,34 @@ function loadUserPage(userData) {
 
 function putImagesInSquareFrame() {
   var $images = $('.Thumbnail-image');
+  var width = $images.parent().width();
 
   $images.each( function() {
     var $image = $(this);
 
     if(!this.complete){
       $image.on('load', function(event) {
-        squareThumbnail($image);
+        squareThumbnail($image, width);
       });
     }
     else {
-      squareThumbnail($image);
+      squareThumbnail($image, width);
     }
   });
 }
 
-function squareThumbnail($image) {
-  var $imageParent = $image.parent();
-  var parentWidth = $imageParent.width();
-
-  $imageParent.height(parentWidth);
+function squareThumbnail($image, width) {
+  $image.parent().height(width);
 
   if($image.width() >= $image.height()) {
-    $image.height(parentWidth);
+    $image.height(width);
     $image.css('top', 0);
-    $image.css('left', -(($image.width()-parentWidth)/2));
+    $image.css('left', -(($image.width()-width)/2));
   }
   else  {
-    $image.width(parentWidth);
+    $image.width(width);
     $image.css('left', 0);
-    $image.css('top', -(($image.height()-parentWidth)/2));
+    $image.css('top', -(($image.height()-width)/2));
   }
 }
 

@@ -65,8 +65,28 @@ app.get('/api/pictures', function (request, response) {
         username: 'jluisacosta',
         avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
       },
-      url: 'http://materializecss.com/images/office.jpg',
+      url: 'https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_960_720.jpg',
       likes: 2,
+      liked: true,
+      createdAt: new Date().setDate(new Date().getDate()-10)
+    },
+    {
+      user: {
+        username: 'jluisacosta',
+        avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+      },
+      url: 'http://poster.keepcalmandposters.com/74288.png',
+      likes: 10,
+      liked: false,
+      createdAt: new Date().getTime()
+    },
+    {
+      user: {
+        username: 'jluisacosta',
+        avatar: 'https://avatars2.githubusercontent.com/u/6529799?v=3&s=460'
+      },
+      url: 'http://www.legalproductivity.com/wp-content/uploads/2016/03/legal-tech-what-is-code.jpg',
+      likes: 123,
       liked: true,
       createdAt: new Date().setDate(new Date().getDate()-10)
     }
