@@ -4,15 +4,15 @@ var app = express();
 
 
 /* Storage */
-//var multer = require('multer');
+var multer = require('multer');
 var ext = require('file-extension');
 var aws = require('aws-sdk');
 var multerS3 = require('multer-s3');
 var config = require('./config');
 
 var s3 = new aws.S3({
-  accessKeyId: config.ws.accessKey,
-  secretAccessKey: config.ws.secretKey
+  accessKeyId: config.aws.accessKey,
+  secretAccessKey: config.aws.secretKey
 });
 
 var storage = multerS3({
