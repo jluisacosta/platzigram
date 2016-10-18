@@ -4,16 +4,39 @@ var app = express();
 
 
 /* Storage */
-var multer = require('multer');
+//var multer = require('multer');
 var ext = require('file-extension');
-var storage = multer.diskStorage({
+var aws = require('aws-sdk');
+var multerS3 = require('multer-s3');
+var config = require('./config');
+
+var s3 = new aws.S3({
+  accessKeyId: config.ws.accessKey,
+  secretAccessKey: config.ws.secretKey
+});
+
+var storage = multerS3({
+  s3: s3,
+  bucket: 'platzigram-jluisacosta',
+  acl: 'public-read',
+  metadata: function (req, file, cb){
+    cb(null, { fieldName: file.fieldname })
+  },
+  key: function (req, file, cb){
+    cb(null, + Date.now() + '.' + ext(file.originalname))
+  }
+});
+
+
+/*var storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, './uploads')
   },
   filename: function (request, file, cb) {
     cb(null, + Date.now() + '.' + ext(file.originalname))
   }
-});
+});*/
+
 var upload = multer({ storage: storage }).single('picture');
 
 
